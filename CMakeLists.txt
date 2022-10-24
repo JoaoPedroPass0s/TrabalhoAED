@@ -3,4 +3,4 @@ project(Trabalho_AED)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Trabalho_AED main.cpp)
+add_executable(Trabalho_AED Code/Tests/Tests.cpp Code/Tests/Tests.h Code/src/InitialCode.cpp Code/Include/InitialCode.h)
