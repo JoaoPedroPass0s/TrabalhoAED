@@ -1,0 +1,3 @@
+/home/joaopassos/Trabalho AED/cmake-build-debug/CMakeFiles/Trabalho_AED.dir
+/home/joaopassos/Trabalho AED/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/joaopassos/Trabalho AED/cmake-build-debug/CMakeFiles/rebuild_cache.dir
