@@ -49,23 +49,17 @@ cmake_ninja_workdir = /home/joaopassos/Trabalho$ AED/cmake-build-debug/
 
 build cmake_object_order_depends_target_Trabalho_AED: phony || CMakeFiles/Trabalho_AED.dir
 
-build CMakeFiles/Trabalho_AED.dir/main.cpp.o: CXX_COMPILER__Trabalho_AED_Debug /home/joaopassos/Trabalho$ AED/main.cpp || cmake_object_order_depends_target_Trabalho_AED
-  DEP_FILE = CMakeFiles/Trabalho_AED.dir/main.cpp.o.d
+build CMakeFiles/Trabalho_AED.dir/Code/Tests/Tests.cpp.o: CXX_COMPILER__Trabalho_AED_Debug /home/joaopassos/Trabalho$ AED/Code/Tests/Tests.cpp || cmake_object_order_depends_target_Trabalho_AED
+  DEP_FILE = CMakeFiles/Trabalho_AED.dir/Code/Tests/Tests.cpp.o.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/Trabalho_AED.dir
-  OBJECT_FILE_DIR = CMakeFiles/Trabalho_AED.dir
+  OBJECT_FILE_DIR = CMakeFiles/Trabalho_AED.dir/Code/Tests
 
-build CMakeFiles/Trabalho_AED.dir/Tests/Tests.cpp.o: CXX_COMPILER__Trabalho_AED_Debug /home/joaopassos/Trabalho$ AED/Tests/Tests.cpp || cmake_object_order_depends_target_Trabalho_AED
-  DEP_FILE = CMakeFiles/Trabalho_AED.dir/Tests/Tests.cpp.o.d
+build CMakeFiles/Trabalho_AED.dir/Code/src/InitialCode.cpp.o: CXX_COMPILER__Trabalho_AED_Debug /home/joaopassos/Trabalho$ AED/Code/src/InitialCode.cpp || cmake_object_order_depends_target_Trabalho_AED
+  DEP_FILE = CMakeFiles/Trabalho_AED.dir/Code/src/InitialCode.cpp.o.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/Trabalho_AED.dir
-  OBJECT_FILE_DIR = CMakeFiles/Trabalho_AED.dir/Tests
-
-build CMakeFiles/Trabalho_AED.dir/Code/InitialCode.cpp.o: CXX_COMPILER__Trabalho_AED_Debug /home/joaopassos/Trabalho$ AED/Code/InitialCode.cpp || cmake_object_order_depends_target_Trabalho_AED
-  DEP_FILE = CMakeFiles/Trabalho_AED.dir/Code/InitialCode.cpp.o.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles/Trabalho_AED.dir
-  OBJECT_FILE_DIR = CMakeFiles/Trabalho_AED.dir/Code
+  OBJECT_FILE_DIR = CMakeFiles/Trabalho_AED.dir/Code/src
 
 
 # =============================================================================
@@ -75,7 +69,7 @@ build CMakeFiles/Trabalho_AED.dir/Code/InitialCode.cpp.o: CXX_COMPILER__Trabalho
 #############################################
 # Link the executable Trabalho_AED
 
-build Trabalho_AED: CXX_EXECUTABLE_LINKER__Trabalho_AED_Debug CMakeFiles/Trabalho_AED.dir/main.cpp.o CMakeFiles/Trabalho_AED.dir/Tests/Tests.cpp.o CMakeFiles/Trabalho_AED.dir/Code/InitialCode.cpp.o
+build Trabalho_AED: CXX_EXECUTABLE_LINKER__Trabalho_AED_Debug CMakeFiles/Trabalho_AED.dir/Code/Tests/Tests.cpp.o CMakeFiles/Trabalho_AED.dir/Code/src/InitialCode.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Trabalho_AED.dir
   POST_BUILD = :
