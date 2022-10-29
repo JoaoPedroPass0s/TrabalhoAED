@@ -9,11 +9,9 @@
 
 class Student {
 public:
-
-private:
-    int stuCode_;
-    char stuName_;
-    std::list<UCClass> classes_;
+    int stuCode;
+    char stuName;
+    std::list<UCClass> classes;
 };
 
 

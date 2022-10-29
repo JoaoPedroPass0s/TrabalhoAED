@@ -7,7 +7,7 @@
 
 
 class UCClass {
-private:
+public:
     char codUC_;
     char codClass_;
 };

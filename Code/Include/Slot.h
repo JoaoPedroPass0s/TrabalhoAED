@@ -7,7 +7,7 @@
 
 
 class Slot {
-private:
+public:
     char weekDay_;
     double startHour_;
     double endHour_;
