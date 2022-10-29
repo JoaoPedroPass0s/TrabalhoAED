@@ -114,7 +114,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Code/src/GestaoHorario.h",
+			"path" : "Code/Include/GestaoHorario.h",
 			"sourceGroupIndex" : 1
 		}
 	],

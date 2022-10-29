@@ -19,7 +19,17 @@
   <component name="ChangeListManager">
     <list default="true" id="5139e8ab-1a17-4821-a7c4-e8c341f11d1f" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Code/Include/GestaoHorario.h" afterDir="false" />
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Code/src/GestaoHorario.cpp" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Code/Include/HTurma.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/Include/Request.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/Include/Student.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/src/GestaoHorario.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/src/HTurma.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/src/Request.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Code/src/Student.cpp" afterDir="false" />
+>>>>>>> ebd37eb (classesStudent_Hturma_Request)
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Code/src/main.cpp" afterDir="false" />
@@ -48,7 +58,11 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoAED" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TrabalhoAED" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TrabalhoAED" beforeDir="false" />
+>>>>>>> ebd37eb (classesStudent_Hturma_Request)
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
     </list>
@@ -94,6 +108,11 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrabalhoAED" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TrabalhoAED" TARGET_NAME="TrabalhoAED" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TrabalhoAED" RUN_TARGET_NAME="TrabalhoAED">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
