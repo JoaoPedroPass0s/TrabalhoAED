@@ -3,4 +3,4 @@ project(TrabalhoAED)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(TrabalhoAED Code/src/main.cpp)
+add_executable(TrabalhoAED Code/src/main.cpp Code/src/GestaoHorario.cpp Code/Include/GestaoHorario.h)
