@@ -3,7 +3,7 @@
 #ifndef TRABALHOAED_GESTAOHORARIO_H
 #define TRABALHOAED_GESTAOHORARIO_H
 #include "../Include/Student.h"
-#include "../Include/HTurma.h"
+#include "../Include/HClass.h"
 #include "../Include/Request.h"
 
 

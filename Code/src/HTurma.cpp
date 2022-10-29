@@ -1,3 +1,0 @@
-
-
-#include "../Include/HTurma.h"
