@@ -8,8 +8,8 @@
 
 class UCClass {
 private:
-    char codUC;
-    char codClass;
+    char codUC_;
+    char codClass_;
 };
 
 

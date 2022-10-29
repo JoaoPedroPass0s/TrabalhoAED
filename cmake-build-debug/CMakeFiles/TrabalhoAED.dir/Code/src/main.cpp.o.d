@@ -145,7 +145,23 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/GestaoHorario.h \
+ /usr/include/c++/11/set /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/queue \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_queue.h \
+ /usr/include/c++/11/bits/uses_allocator.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/Student.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/../Include/UCClass.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/bits/list.tcc \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/HClass.h \
+ /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/../Include/Slot.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/Request.h

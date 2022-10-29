@@ -7,7 +7,7 @@
 
 class HClass {
 private:
-    list<Slot> ClassUCHour;
+    std::list<Slot> ClassUCHour_;
 };
 
 

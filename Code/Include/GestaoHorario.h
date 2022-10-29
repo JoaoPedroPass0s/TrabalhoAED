@@ -2,6 +2,9 @@
 
 #ifndef TRABALHOAED_GESTAOHORARIO_H
 #define TRABALHOAED_GESTAOHORARIO_H
+
+#include <set>
+#include <queue>
 #include "../Include/Student.h"
 #include "../Include/HClass.h"
 #include "../Include/Request.h"
@@ -14,9 +17,9 @@ class GestaoHorario {
         void saveRequest();
         void processRequest();
     private:
-        set <Student> students;
-        vector <HClass> horario;
-        queue <Request> requests;
+        std::set <Student> students_;
+        std::vector <HClass> horario_;
+        std::queue <Request> requests_;
 };
 
 

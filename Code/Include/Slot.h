@@ -8,10 +8,10 @@
 
 class Slot {
 private:
-    char weekDay;
-    double startHour;
-    double endHour;
-    char classType;
+    char weekDay_;
+    double startHour_;
+    double endHour_;
+    char classType_;
 };
 
 
