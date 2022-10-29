@@ -10,7 +10,7 @@ public:
 private:
     int stuCode;
     char stuName;
-    list <UCTurma> turmas;
+    list <UCClass> classes;
 };
 
 

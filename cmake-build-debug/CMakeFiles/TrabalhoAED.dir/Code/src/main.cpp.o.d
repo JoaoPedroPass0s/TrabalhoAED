@@ -146,5 +146,6 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/GestaoHorario.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/Student.h \
- /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/HTurma.h \
+ /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/../Include/UCClass.h \
+ /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/HClass.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/Request.h
