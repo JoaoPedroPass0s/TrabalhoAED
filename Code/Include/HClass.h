@@ -6,7 +6,7 @@
 
 
 class HClass {
-public:
+private:
     std::list<Slot> ClassUCHour_;
 };
 
