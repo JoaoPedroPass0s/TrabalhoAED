@@ -5,11 +5,17 @@
 #ifndef TRABALHOAED_UCCLASS_H
 #define TRABALHOAED_UCCLASS_H
 
+#include <string>
 
 class UCClass {
 public:
-    char codUC_;
-    char codClass_;
+    UCClass(string uc, string classes);
+    string getUc() const;
+    string getClass() const;
+
+private:
+    string uc_;
+    string class_;
 };
 
 

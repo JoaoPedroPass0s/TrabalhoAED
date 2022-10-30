@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o -o TrabalhoAED 

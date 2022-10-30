@@ -1,5 +1,6 @@
-//
-// Created by pedropassos on 29-10-2022.
-//
-
 #include "../Include/UCClass.h"
+#include <string>
+
+UCClass::UCClass(string uc, string classes): uc_(uc), class_(classes) {}
+string UCClass::getUc() const {return uc_; }
+string UCClass::getClass() const {return class_; }
