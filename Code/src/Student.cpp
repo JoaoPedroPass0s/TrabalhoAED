@@ -10,4 +10,4 @@ bool Student::operator<(const Student &s) const {return ("x" < s."x"); }
 
 string Student::getName() const {return name_; }
 string Student::getId() const {return id_; }
-vector<UcClass> Student::getClasses() const {return classes_; }
+vector<UCClass> Student::getClasses() const {return classes_; }

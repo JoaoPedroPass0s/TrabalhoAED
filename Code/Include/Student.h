@@ -11,7 +11,7 @@ public:
     Student(string id, string name);
     string getId() const;
     string getName() const;
-    vector<UcClass> getClasses() const;
+    vector<UCClass> getClasses() const;
     bool operator== (const Student &s) const;
     bool operator< (const Student &s) const;
     bool operator> (const Student &s) const;
@@ -19,7 +19,7 @@ public:
 private:
     string id_;
     string name_;
-    vector<UcClass> classes_;
+    vector<UCClass> classes_;
 };
 
 #endif //TRABALHOAED_STUDENT_H
