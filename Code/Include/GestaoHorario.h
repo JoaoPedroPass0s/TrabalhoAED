@@ -18,7 +18,7 @@ class GestaoHorario {
         void processRequest();
     private:
         vector <Student> students_;
-        set <HClass> horario_;
+        vector <HClass> horario_;
         queue <Request> requests_;
 };
 

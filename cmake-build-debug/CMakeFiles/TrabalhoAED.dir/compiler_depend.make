@@ -211,7 +211,9 @@ CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o: ../Code/src/GestaoHorar
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
-  /usr/include/c++/11/bits/fstream.tcc
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc
 
 CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.o: ../Code/src/HClass.cpp \
   /usr/include/stdc-predef.h \
@@ -1077,6 +1079,10 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 ../Code/src/Slot.cpp:
 
 ../Code/src/Request.cpp:
+
+/usr/include/c++/11/bits/sstream.tcc:
+
+/usr/include/c++/11/sstream:
 
 /usr/include/c++/11/bits/fstream.tcc:
 

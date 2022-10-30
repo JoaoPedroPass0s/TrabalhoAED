@@ -14,10 +14,11 @@ public:
     string getId() const;
     string getName() const;
     vector<UCClass> getClasses() const;
+    /*
     bool operator== (const Student &s) const;
     bool operator< (const Student &s) const;
     bool operator> (const Student &s) const;
-
+    */
 private:
     string id_;
     string name_;
