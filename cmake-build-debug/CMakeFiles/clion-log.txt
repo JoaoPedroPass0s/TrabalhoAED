@@ -1,6 +1,4 @@
-/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/danieldoria/Desktop/AED/Projeto/TrabalhoAED -B /home/danieldoria/Desktop/AED/Projeto/TrabalhoAED/cmake-build-debug
-CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
-CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
-CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
--- Configuring incomplete, errors occurred!
-See also "/home/danieldoria/Desktop/AED/Projeto/TrabalhoAED/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/pedropassos/TrabalhoAED -B /home/pedropassos/TrabalhoAED/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pedropassos/TrabalhoAED/cmake-build-debug

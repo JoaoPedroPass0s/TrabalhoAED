@@ -6,6 +6,7 @@
 #define TRABALHOAED_SLOT_H
 
 #include <string>
+using namespace std;
 
 
 class Slot {

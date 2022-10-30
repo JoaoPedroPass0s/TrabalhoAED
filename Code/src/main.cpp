@@ -2,7 +2,7 @@
 #include "../Include/GestaoHorario.h"
 
 int main() {
-    std::cout << "Hello, World!123456" << std::endl;
+    std::cout << "Hello, World!" << std::endl;
     GestaoHorario horario;
     horario.readFileStudents();
     horario.saveRequest();

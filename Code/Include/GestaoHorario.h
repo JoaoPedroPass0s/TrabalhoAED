@@ -5,10 +5,10 @@
 
 #include <set>
 #include <queue>
-#include "../Include/Student.h"
-#include "../Include/HClass.h"
-#include "../Include/Request.h"
-
+#include "Student.h"
+#include "HClass.h"
+#include "Request.h"
+using namespace std;
 
 
 class GestaoHorario {
@@ -17,9 +17,9 @@ class GestaoHorario {
         void saveRequest();
         void processRequest();
     private:
-        std::set <Student> students_;
-        std::vector <HClass> horario_;
-        std::queue <Request> requests_;
+        vector <Student> students_;
+        set <HClass> horario_;
+        queue <Request> requests_;
 };
 
 

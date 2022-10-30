@@ -129,6 +129,150 @@ TrabalhoAED/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/build
 .PHONY : TrabalhoAED/fast
 
+Code/src/GestaoHorario.o: Code/src/GestaoHorario.cpp.o
+.PHONY : Code/src/GestaoHorario.o
+
+# target to build an object file
+Code/src/GestaoHorario.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o
+.PHONY : Code/src/GestaoHorario.cpp.o
+
+Code/src/GestaoHorario.i: Code/src/GestaoHorario.cpp.i
+.PHONY : Code/src/GestaoHorario.i
+
+# target to preprocess a source file
+Code/src/GestaoHorario.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.i
+.PHONY : Code/src/GestaoHorario.cpp.i
+
+Code/src/GestaoHorario.s: Code/src/GestaoHorario.cpp.s
+.PHONY : Code/src/GestaoHorario.s
+
+# target to generate assembly for a file
+Code/src/GestaoHorario.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.s
+.PHONY : Code/src/GestaoHorario.cpp.s
+
+Code/src/HClass.o: Code/src/HClass.cpp.o
+.PHONY : Code/src/HClass.o
+
+# target to build an object file
+Code/src/HClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.o
+.PHONY : Code/src/HClass.cpp.o
+
+Code/src/HClass.i: Code/src/HClass.cpp.i
+.PHONY : Code/src/HClass.i
+
+# target to preprocess a source file
+Code/src/HClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.i
+.PHONY : Code/src/HClass.cpp.i
+
+Code/src/HClass.s: Code/src/HClass.cpp.s
+.PHONY : Code/src/HClass.s
+
+# target to generate assembly for a file
+Code/src/HClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.s
+.PHONY : Code/src/HClass.cpp.s
+
+Code/src/Request.o: Code/src/Request.cpp.o
+.PHONY : Code/src/Request.o
+
+# target to build an object file
+Code/src/Request.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.o
+.PHONY : Code/src/Request.cpp.o
+
+Code/src/Request.i: Code/src/Request.cpp.i
+.PHONY : Code/src/Request.i
+
+# target to preprocess a source file
+Code/src/Request.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.i
+.PHONY : Code/src/Request.cpp.i
+
+Code/src/Request.s: Code/src/Request.cpp.s
+.PHONY : Code/src/Request.s
+
+# target to generate assembly for a file
+Code/src/Request.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.s
+.PHONY : Code/src/Request.cpp.s
+
+Code/src/Slot.o: Code/src/Slot.cpp.o
+.PHONY : Code/src/Slot.o
+
+# target to build an object file
+Code/src/Slot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/Slot.cpp.o
+.PHONY : Code/src/Slot.cpp.o
+
+Code/src/Slot.i: Code/src/Slot.cpp.i
+.PHONY : Code/src/Slot.i
+
+# target to preprocess a source file
+Code/src/Slot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/Slot.cpp.i
+.PHONY : Code/src/Slot.cpp.i
+
+Code/src/Slot.s: Code/src/Slot.cpp.s
+.PHONY : Code/src/Slot.s
+
+# target to generate assembly for a file
+Code/src/Slot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/Slot.cpp.s
+.PHONY : Code/src/Slot.cpp.s
+
+Code/src/Student.o: Code/src/Student.cpp.o
+.PHONY : Code/src/Student.o
+
+# target to build an object file
+Code/src/Student.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.o
+.PHONY : Code/src/Student.cpp.o
+
+Code/src/Student.i: Code/src/Student.cpp.i
+.PHONY : Code/src/Student.i
+
+# target to preprocess a source file
+Code/src/Student.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.i
+.PHONY : Code/src/Student.cpp.i
+
+Code/src/Student.s: Code/src/Student.cpp.s
+.PHONY : Code/src/Student.s
+
+# target to generate assembly for a file
+Code/src/Student.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.s
+.PHONY : Code/src/Student.cpp.s
+
+Code/src/UCClass.o: Code/src/UCClass.cpp.o
+.PHONY : Code/src/UCClass.o
+
+# target to build an object file
+Code/src/UCClass.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/UCClass.cpp.o
+.PHONY : Code/src/UCClass.cpp.o
+
+Code/src/UCClass.i: Code/src/UCClass.cpp.i
+.PHONY : Code/src/UCClass.i
+
+# target to preprocess a source file
+Code/src/UCClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/UCClass.cpp.i
+.PHONY : Code/src/UCClass.cpp.i
+
+Code/src/UCClass.s: Code/src/UCClass.cpp.s
+.PHONY : Code/src/UCClass.s
+
+# target to generate assembly for a file
+Code/src/UCClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/UCClass.cpp.s
+.PHONY : Code/src/UCClass.cpp.s
+
 Code/src/main.o: Code/src/main.cpp.o
 .PHONY : Code/src/main.o
 
@@ -162,6 +306,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TrabalhoAED"
+	@echo "... Code/src/GestaoHorario.o"
+	@echo "... Code/src/GestaoHorario.i"
+	@echo "... Code/src/GestaoHorario.s"
+	@echo "... Code/src/HClass.o"
+	@echo "... Code/src/HClass.i"
+	@echo "... Code/src/HClass.s"
+	@echo "... Code/src/Request.o"
+	@echo "... Code/src/Request.i"
+	@echo "... Code/src/Request.s"
+	@echo "... Code/src/Slot.o"
+	@echo "... Code/src/Slot.i"
+	@echo "... Code/src/Slot.s"
+	@echo "... Code/src/Student.o"
+	@echo "... Code/src/Student.i"
+	@echo "... Code/src/Student.s"
+	@echo "... Code/src/UCClass.o"
+	@echo "... Code/src/UCClass.i"
+	@echo "... Code/src/UCClass.s"
 	@echo "... Code/src/main.o"
 	@echo "... Code/src/main.i"
 	@echo "... Code/src/main.s"

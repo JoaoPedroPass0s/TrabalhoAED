@@ -2,7 +2,10 @@
 
 #ifndef TRABALHOAED_HCLASS_H
 #define TRABALHOAED_HCLASS_H
+
+#include <list>
 #include "../Include/Slot.h"
+using namespace std;
 
 
 class HClass {

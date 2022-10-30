@@ -5,10 +5,12 @@
 #include <list>
 #include <string>
 #include <vector>
+using namespace std;
 
 class Student {
 public:
-    Student(string id, string name);
+    Student(string id, string name,vector<UCClass> classes);
+
     string getId() const;
     string getName() const;
     vector<UCClass> getClasses() const;

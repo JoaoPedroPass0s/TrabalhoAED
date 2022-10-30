@@ -5,7 +5,7 @@
 #include "../Include/Slot.h"
 #include <string>
 
-Slot::Slot(string weekDay, double startHour, double endHour, string classType: weekDay_(weekDay), startHour_(startHour), endHour_(endHour), classType_(classType) {}
+Slot::Slot(string weekDay, double startHour, double endHour, string classType): weekDay_(weekDay), startHour_(startHour), endHour_(endHour), classType_(classType) {}
 
 string Slot::getWeekDay() const {return weekDay_; }
 string Slot::getClassType() const {return classType_; }
