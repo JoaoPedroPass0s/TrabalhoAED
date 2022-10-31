@@ -9,8 +9,16 @@ using namespace std;
 
 
 class HClass {
+public:
+    HClass(string uc, string classes, list<Slot> classUcHour);
+    string getUc() const;
+    string getClass() const;
+    list<Slot> getClassUcHour() const;
+
 private:
-    std::list<Slot> ClassUCHour_;
+    list<Slot> classUcHour_;
+    string uc_;
+    string class_;
 };
 
 
