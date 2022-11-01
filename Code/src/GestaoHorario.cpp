@@ -82,8 +82,8 @@ void GestaoHorario::readFileClasses(){
     horarioC_.push_back(classH);
 }
 
-void GestaoHorario::saveRequest(){
-
+void GestaoHorario::saveRequest(Request request){
+    requests_.push(request);
 }
 
 void GestaoHorario::processRequest(){

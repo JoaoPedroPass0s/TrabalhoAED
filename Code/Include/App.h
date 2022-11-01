@@ -12,6 +12,7 @@ public:
     void start();
     bool printUserMenu(GestaoHorario);
     void printStudentSchedule(GestaoHorario);
+    void printMakeRequest(GestaoHorario horario);
 };
 
 

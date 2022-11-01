@@ -13,13 +13,15 @@ void App::start(){
     GestaoHorario horario;
     horario.readFileStudents();
     horario.readFileClasses();
-    horario.saveRequest();
-    horario.processRequest();
     while (true) {
         if(!printUserMenu(horario)){
             break;
         }
     }
+    if(!horario.requests_.empty()){
+        cout << "Processing Requests...";
+    }
+    horario.processRequest();
     cout << "Closing App...";
 }
 
@@ -40,7 +42,8 @@ bool App::printUserMenu(GestaoHorario horario) {
     cin >> operation;
     switch(operation){
         case 11:
-
+            printMakeRequest(horario);
+            break;
         case 12:
 
         case 13:
@@ -93,4 +96,28 @@ void App::printStudentSchedule(GestaoHorario horario){
                 "                                               \n";
         cin >> code;
     }
+}
+
+void App::printMakeRequest(GestaoHorario horario){
+    string stucode,uc,classe,wait;
+    cout <<    "╒═════════════════════════════════════════════════════════╕\n"
+               "│                      Make Request                       │\n"
+               "╞═════════════════════════════════════════════════════════╡\n"
+               "│      To make a request write Student Code, Uc Code      │\n"
+               "│          and the Class you want to change to.           │\n"
+               "╞═════════════════════════════════════════════════════════╡\n"
+               "│  Return                                            [1]  │\n"
+               "╘═════════════════════════════════════════════════════════╛\n"
+               "                                               \n";
+    cout << "Write the Student Code:" << endl;
+    cin >> stucode;
+    cout << "Write the Uc Code:" << endl;
+    cin >> uc;
+    cout << "Write the Class Code:" << endl;
+    cin >> classe;
+    Request request(uc,classe,stucode);
+    horario.saveRequest(request);
+    cout << "Your request has been added to the queue and will be processed by the program. " << endl;
+    cout << "Write any character to return" << endl;
+    cin >> wait ;
 }

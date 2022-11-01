@@ -14,7 +14,7 @@ using namespace std;
 class GestaoHorario {
     public:
         void readFileStudents();
-        void saveRequest();
+        void saveRequest(Request request);
         void processRequest();
         void listAllStudents();
         void readFileClasses();
