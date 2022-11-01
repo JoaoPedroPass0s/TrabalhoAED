@@ -50,4 +50,10 @@ void GestaoHorario::processRequest(){
 
 }
 
+void GestaoHorario::listAllStudents(){
+    for(Student s:students_){
+        cout << s.getName() << " " << s.getId() << endl;
+    }
+}
+
 

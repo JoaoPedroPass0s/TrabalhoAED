@@ -129,6 +129,30 @@ TrabalhoAED/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/build
 .PHONY : TrabalhoAED/fast
 
+Code/src/App.o: Code/src/App.cpp.o
+.PHONY : Code/src/App.o
+
+# target to build an object file
+Code/src/App.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o
+.PHONY : Code/src/App.cpp.o
+
+Code/src/App.i: Code/src/App.cpp.i
+.PHONY : Code/src/App.i
+
+# target to preprocess a source file
+Code/src/App.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.i
+.PHONY : Code/src/App.cpp.i
+
+Code/src/App.s: Code/src/App.cpp.s
+.PHONY : Code/src/App.s
+
+# target to generate assembly for a file
+Code/src/App.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.s
+.PHONY : Code/src/App.cpp.s
+
 Code/src/GestaoHorario.o: Code/src/GestaoHorario.cpp.o
 .PHONY : Code/src/GestaoHorario.o
 
@@ -306,6 +330,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TrabalhoAED"
+	@echo "... Code/src/App.o"
+	@echo "... Code/src/App.i"
+	@echo "... Code/src/App.s"
 	@echo "... Code/src/GestaoHorario.o"
 	@echo "... Code/src/GestaoHorario.i"
 	@echo "... Code/src/GestaoHorario.s"

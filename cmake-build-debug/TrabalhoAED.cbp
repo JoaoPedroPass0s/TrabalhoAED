@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/App.cpp">
+			<Option target="TrabalhoAED"/>
+		</Unit>
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/App.h">
+			<Option target="TrabalhoAED"/>
+		</Unit>
 		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/GestaoHorario.cpp">
 			<Option target="TrabalhoAED"/>
 		</Unit>

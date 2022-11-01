@@ -1,11 +1,9 @@
 #include <iostream>
 #include "../Include/GestaoHorario.h"
+#include "App.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    GestaoHorario horario;
-    horario.readFileStudents();
-    horario.saveRequest();
-    horario.processRequest();
+    App a;
+    a.start();
     return 0;
 }

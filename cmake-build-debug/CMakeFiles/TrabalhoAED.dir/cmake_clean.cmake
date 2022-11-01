@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o"
+  "CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o.d"
   "CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o"
   "CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o.d"
   "CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.o"
