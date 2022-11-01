@@ -10,7 +10,7 @@ using namespace std;
 class Student {
 public:
     Student(string id, string name,vector<UCClass> classes);
-
+    Student();
     string getId() const;
     string getName() const;
     vector<UCClass> getClasses() const;

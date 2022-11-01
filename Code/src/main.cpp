@@ -1,6 +1,6 @@
 #include <iostream>
 #include "../Include/GestaoHorario.h"
-#include "App.h"
+#include "../Include/App.h"
 
 int main() {
     App a;

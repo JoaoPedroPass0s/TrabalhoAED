@@ -17,10 +17,10 @@ class GestaoHorario {
         void saveRequest();
         void processRequest();
         void listAllStudents();
-    private:
-        vector <HClass> horario_;
-        queue <Request> requests_;
+        void readFileClasses();
         vector <Student> students_;
+        vector <HClass> horarioC_;
+        queue <Request> requests_;
 };
 
 

@@ -178,32 +178,33 @@ CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o: ../Code/src/App.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../Code/src/App.h \
-  ../Code/Include/GestaoHorario.h \
-  /usr/include/c++/11/set \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/stl_set.h \
-  /usr/include/c++/11/bits/stl_multiset.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/queue \
-  /usr/include/c++/11/deque \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_deque.h \
-  /usr/include/c++/11/bits/deque.tcc \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  /usr/include/c++/11/bits/stl_heap.h \
-  /usr/include/c++/11/bits/stl_queue.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
   ../Code/Include/Student.h \
   ../Code/Include/UCClass.h \
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/list.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  ../Code/Include/App.h \
+  ../Code/Include/GestaoHorario.h \
+  /usr/include/c++/11/set \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/bits/stl_set.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/queue \
+  /usr/include/c++/11/deque \
+  /usr/include/c++/11/bits/stl_deque.h \
+  /usr/include/c++/11/bits/deque.tcc \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  ../Code/Include/Student.h \
   ../Code/Include/HClass.h \
   ../Code/Include/Slot.h \
   ../Code/Include/Request.h
@@ -1277,7 +1278,8 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
   ../Code/Include/HClass.h \
   ../Code/Include/Slot.h \
   ../Code/Include/Request.h \
-  ../Code/src/App.h
+  ../Code/Include/App.h \
+  ../Code/Include/GestaoHorario.h
 
 
 ../Code/src/UCClass.cpp:
@@ -1304,9 +1306,9 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 ../Code/Include/Slot.h:
 
-/usr/include/c++/11/bits/list.tcc:
+/usr/include/c++/11/bits/stl_queue.h:
 
-/usr/include/c++/11/list:
+/usr/include/c++/11/bits/stl_deque.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
@@ -1332,6 +1334,10 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
+/usr/include/c++/11/bits/uses_allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
 /usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -1353,6 +1359,10 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 /usr/include/c++/11/bits/stl_iterator.h:
 
 /usr/include/c++/11/debug/debug.h:
+
+/usr/include/c++/11/bits/deque.tcc:
+
+/usr/include/wchar.h:
 
 /usr/include/c++/11/bits/ostream.tcc:
 
@@ -1391,6 +1401,8 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+../Code/Include/App.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -1436,10 +1448,6 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/c++/11/bits/allocated_ptr.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
-
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/c++/11/iosfwd:
@@ -1464,11 +1472,11 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
+/usr/include/c++/11/bits/stl_heap.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/usr/include/wchar.h:
-
-/usr/include/c++/11/bits/deque.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -1487,6 +1495,8 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 /usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/c++/11/list:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -1515,6 +1525,10 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 ../Code/src/main.cpp:
 
 /usr/include/stdc-predef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
@@ -1574,6 +1588,8 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/c++/11/bits/locale_classes.h:
 
+/usr/include/c++/11/bits/list.tcc:
+
 /usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/c++/11/string:
@@ -1624,10 +1640,6 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/c++/11/cstdio:
 
-../Code/Include/UCClass.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/alloca.h:
@@ -1654,9 +1666,9 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/usr/include/c++/11/bits/stl_heap.h:
+../Code/Include/UCClass.h:
 
 /usr/include/c++/11/bits/charconv.h:
 
@@ -1692,30 +1704,20 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/c++/11/bits/istream.tcc:
 
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/11/set:
+/usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/c++/11/bits/stl_tree.h:
 
-/usr/include/c++/11/ext/aligned_buffer.h:
-
-../Code/src/App.h:
-
-/usr/include/errno.h:
-
-/usr/include/c++/11/bits/stl_set.h:
-
-/usr/include/c++/11/bits/stl_deque.h:
-
 /usr/include/c++/11/bits/stl_list.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
-/usr/include/c++/11/bits/stl_queue.h:
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+/usr/include/c++/11/set:
 
-/usr/include/c++/11/bits/uses_allocator.h:
+/usr/include/errno.h:
+
+/usr/include/c++/11/bits/stl_set.h:
