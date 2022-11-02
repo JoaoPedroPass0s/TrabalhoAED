@@ -135,14 +135,14 @@ bool App::printMakeRequest(){
                 cout << "Write the Code of the Class you want to remove the student of:" << endl;
                 cin >> classein;
                 Request r(uc, classein, "", stucode, "Remove");
-                horario.requests_.push_back(r);
+                horario.saveRequest(r);
                 break;
             }
             case 2: {
                 cout << "Write the Class Code you want to change the student too:" << endl;
                 cin >> classeout;
                 Request i(uc, "", classeout, stucode, "Add");
-                horario.requests_.push_back(i);
+                horario.saveRequest(i);
                 break;
             }
             case 3: {
@@ -151,7 +151,7 @@ bool App::printMakeRequest(){
                 cout << "Write the Class Code you want to change too:" << endl;
                 cin >> classeout;
                 Request o(uc, classein, classeout, stucode, "Change");
-                horario.requests_.push_back(o);
+                horario.saveRequest(o);
                 break;
             }
             case 4: {
@@ -161,7 +161,7 @@ bool App::printMakeRequest(){
                     cout << "Write the Class Code you want to change too:" << endl;
                     cin >> classeout;
                     Request o(uc, classein, classeout, stucode, "Change");
-                    horario.requests_.push_back(o);
+                    horario.saveRequest(o);
                     cout << "To Stop write 1 to continue write 2..." << endl;
                     cin >> chose;
                     if (chose == 1) {

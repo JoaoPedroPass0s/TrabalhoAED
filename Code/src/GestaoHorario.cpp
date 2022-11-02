@@ -88,7 +88,9 @@ void GestaoHorario::saveRequest(Request request){
 }
 
 void GestaoHorario::processRequest(){
+    for(Request r:requests_){
 
+    }
 }
 
 void GestaoHorario::listAllStudents(){
