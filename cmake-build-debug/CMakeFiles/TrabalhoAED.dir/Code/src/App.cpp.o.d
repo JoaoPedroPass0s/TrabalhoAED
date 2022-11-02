@@ -167,4 +167,5 @@ CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o: \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/Student.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/HClass.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/Slot.h \
+ /home/pedropassos/TrabalhoAED/Code/src/../Include/Request.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/Request.h

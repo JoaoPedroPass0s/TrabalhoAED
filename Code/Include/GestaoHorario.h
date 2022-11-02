@@ -20,7 +20,7 @@ class GestaoHorario {
         void readFileClasses();
         vector <Student> students_;
         vector <HClass> horarioC_;
-        queue <Request> requests_;
+        vector <Request> requests_;
 };
 
 

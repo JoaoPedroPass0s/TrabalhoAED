@@ -4,34 +4,34 @@
 #include <iostream>
 #include "../Include/Student.h"
 #include "../Include/App.h"
+#include "../Include/Request.h"
 
 
 using namespace std;
 
 void App::start(){
     std::cout << "Hello, World!" << std::endl;
-    GestaoHorario horario;
     horario.readFileStudents();
     horario.readFileClasses();
     while (true) {
-        if(!printUserMenu(horario)){
+        if(!printUserMenu()){
             break;
         }
     }
     if(!horario.requests_.empty()){
-        cout << "Processing Requests...";
+        cout << "Processing Requests..." << endl;
     }
     horario.processRequest();
-    cout << "Closing App...";
+    cout << "Closing App..." << endl;
 }
 
-bool App::printUserMenu(GestaoHorario horario) {
+bool App::printUserMenu() {
     int operation;
     cout <<    "╒═════════════════════════════════════════════╤═════════════════════════════════════════════╕\n"
                "│             Request Management              │             Schedule Visualization          │\n"
                "╞═════════════════════════════════════════════╪═════════════════════════════════════════════╡\n"
                "│  Make Request                          [11] │  View Student Classes                  [21] │\n"
-               "│  Cancel Request                        [12] │  View UC Classes                       [22] │\n"
+               "│  Cancel Last Request                   [12] │  View UC Classes                       [22] │\n"
                "│  Request list                          [13] │  View UC Schedule                      [23] │\n"
                "╞═════════════════════════════════════════════╡  View Student List                     [24] │\n"
                "│                Other operations             │                                             │\n"
@@ -42,14 +42,15 @@ bool App::printUserMenu(GestaoHorario horario) {
     cin >> operation;
     switch(operation){
         case 11:
-            printMakeRequest(horario);
+            printMakeRequest();
             break;
         case 12:
 
         case 13:
-
+            printRequestList();
+            break;
         case 21:
-            printStudentSchedule(horario);
+            printStudentSchedule();
             break;
         case 22:
 
@@ -64,7 +65,7 @@ bool App::printUserMenu(GestaoHorario horario) {
     return true;
 }
 
-void App::printStudentSchedule(GestaoHorario horario){
+void App::printStudentSchedule(){
     string code;
     cout <<    "╒═════════════════════════════════════════════╕\n"
                "│             Student Classes                 │\n"
@@ -98,7 +99,7 @@ void App::printStudentSchedule(GestaoHorario horario){
     }
 }
 
-void App::printMakeRequest(GestaoHorario horario){
+void App::printMakeRequest(){
     string stucode,uc,classe,wait;
     cout <<    "╒═════════════════════════════════════════════════════════╕\n"
                "│                      Make Request                       │\n"
@@ -118,6 +119,18 @@ void App::printMakeRequest(GestaoHorario horario){
     Request request(uc,classe,stucode);
     horario.saveRequest(request);
     cout << "Your request has been added to the queue and will be processed by the program. " << endl;
-    cout << "Write any character to return" << endl;
+    cout << "Write any character to return..." << endl;
     cin >> wait ;
+}
+
+void App::printRequestList(){
+    string c;
+    cout << "╒═════════════════════════════════════════════════════════════════╕\n";
+    for(Request r:horario.requests_){
+        cout << "  Student Code: " << r.getStudentCode() << " | Uc Code: " << r.getUc() << " | Class Code: " << r.getClass() << endl;
+    }
+    cout <<"╘═════════════════════════════════════════════════════════════════╛\n"
+           "                                               \n";
+    cout << "Write any character to return..." << endl;
+    cin >> c;
 }

@@ -207,6 +207,7 @@ CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o: ../Code/src/App.cpp \
   ../Code/Include/Student.h \
   ../Code/Include/HClass.h \
   ../Code/Include/Slot.h \
+  ../Code/Include/Request.h \
   ../Code/Include/Request.h
 
 CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o: ../Code/src/GestaoHorario.cpp \

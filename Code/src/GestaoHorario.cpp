@@ -83,7 +83,7 @@ void GestaoHorario::readFileClasses(){
 }
 
 void GestaoHorario::saveRequest(Request request){
-    requests_.push(request);
+    requests_.push_back(request);
 }
 
 void GestaoHorario::processRequest(){
@@ -91,9 +91,12 @@ void GestaoHorario::processRequest(){
 }
 
 void GestaoHorario::listAllStudents(){
+    string wait;
     for(Student s:students_){
         cout << s.getName() << " " << s.getId()<< endl;
     }
+    cout << "Write any character to return..." << endl;
+    cin >> wait ;
 }
 
 
