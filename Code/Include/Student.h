@@ -9,18 +9,18 @@ using namespace std;
 
 class Student {
 public:
-    Student(string id, string name,vector<UCClass> classes);
+    Student(int id, string name,vector<UCClass> classes);
 
-    string getId() const;
+    int getId() const;
     string getName() const;
     vector<UCClass> getClasses() const;
-    /*
+
     bool operator== (const Student &s) const;
     bool operator< (const Student &s) const;
     bool operator> (const Student &s) const;
-    */
+
 private:
-    string id_;
+    int id_;
     string name_;
     vector<UCClass> classes_;
 };

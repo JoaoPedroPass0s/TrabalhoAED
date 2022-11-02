@@ -4,7 +4,7 @@
 
 #ifndef TRABALHOAED_APP_H
 #define TRABALHOAED_APP_H
-#include "../Include/GestaoHorario.h"
+#include "GestaoHorario.h"
 
 
 class App {

@@ -2,7 +2,7 @@
 // Created by pedropassos on 01-11-2022.
 //
 #include <iostream>
-#include "App.h"
+#include "../Include/App.h"
 
 
 using namespace std;
@@ -59,5 +59,7 @@ bool App::printUserMenu(GestaoHorario horario) {
 }
 
 void App::printStudentSchedule(){
+    cout << "Student's name: "
+    cin >> students_name_;
 
 }
