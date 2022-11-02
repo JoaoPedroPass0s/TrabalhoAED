@@ -10,8 +10,12 @@
 class App {
 public:
     void start();
-    bool printUserMenu(GestaoHorario);
+    bool printUserMenu();
     void printStudentSchedule();
+    void printMakeRequest();
+    void printRequestList();
+private:
+    GestaoHorario horario;
 };
 
 

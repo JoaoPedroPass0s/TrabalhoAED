@@ -14,13 +14,13 @@ using namespace std;
 class GestaoHorario {
     public:
         void readFileStudents();
-        void saveRequest();
+        void saveRequest(Request request);
         void processRequest();
         void listAllStudents();
-    private:
-        vector <HClass> horario_;
-        queue <Request> requests_;
+        void readFileClasses();
         vector <Student> students_;
+        vector <HClass> horarioC_;
+        vector <Request> requests_;
 };
 
 
