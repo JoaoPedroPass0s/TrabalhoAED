@@ -1,7 +1,7 @@
 #include <iostream>
 #include "../Include/GestaoHorario.h"
 #include "../Include/App.h"
-#include "C:\Users\User\Desktop\TrabalhoAED\Code\Include\Student.h"
+#include "../Include/Student.h"
 #include <fstream>
 #include <sstream>
 #include <list>
@@ -9,8 +9,7 @@
 using namespace std;
 
 struct StudentNode {
-    StudentNode(int i, Student student) {
-    }
+    StudentNode(int, Student) {}
     int id;
     Student s;
     StudentNode* left;

@@ -31,7 +31,7 @@ bool App::printUserMenu() {
                "│             Request Management              │             Schedule Visualization          │\n"
                "╞═════════════════════════════════════════════╪═════════════════════════════════════════════╡\n"
                "│  Make Request                          [11] │  View Student Classes                  [21] │\n"
-               "│  Cancel Last Request                   [12] │  View UC Classes                       [22] │\n"
+               "│  Cancel Request                        [12] │  View UC Classes                       [22] │\n"
                "│  Request list                          [13] │  View UC Schedule                      [23] │\n"
                "╞═════════════════════════════════════════════╡  View Student List                     [24] │\n"
                "│                Other operations             │                                             │\n"
@@ -40,12 +40,14 @@ bool App::printUserMenu() {
                "╘═════════════════════════════════════════════╧═════════════════════════════════════════════╛\n"
                "                                                                                             \n";
     cin >> operation;
+    cin.ignore();
     switch(operation){
         case 11:
             printMakeRequest();
             break;
         case 12:
-
+            cancelRequest();
+            break;
         case 13:
             printRequestList();
             break;
@@ -76,6 +78,7 @@ void App::printStudentSchedule(){
                "╘═════════════════════════════════════════════╛\n"
                "                                               \n";
     cin >> code;
+    cin.ignore();
     if(code!=1) {
         Student student;
         for (Student s: horario.students_) {
@@ -95,12 +98,13 @@ void App::printStudentSchedule(){
         cout << "│  Return                                [1]  │\n"
                 "╘═════════════════════════════════════════════╛\n"
                 "                                               \n";
-        cin >> code;
+        cin.ignore();
+        cout << "Returning..." << endl;
     }
 }
 
 void App::printMakeRequest(){
-    string stucode,uc,classe,wait;
+    string stucode,uc,classe;
     cout <<    "╒═════════════════════════════════════════════════════════╕\n"
                "│                      Make Request                       │\n"
                "╞═════════════════════════════════════════════════════════╡\n"
@@ -119,18 +123,57 @@ void App::printMakeRequest(){
     Request request(uc,classe,stucode);
     horario.saveRequest(request);
     cout << "Your request has been added to the queue and will be processed by the program. " << endl;
-    cout << "Write any character to return..." << endl;
-    cin >> wait ;
+    cout << "Press Enter to return..." << endl;
+    cin.ignore();
+    cin.ignore();
+    cout << "Returning..." << endl;
 }
 
 void App::printRequestList(){
-    string c;
     cout << "╒═════════════════════════════════════════════════════════════════╕\n";
     for(Request r:horario.requests_){
         cout << "  Student Code: " << r.getStudentCode() << " | Uc Code: " << r.getUc() << " | Class Code: " << r.getClass() << endl;
     }
     cout <<"╘═════════════════════════════════════════════════════════════════╛\n"
            "                                               \n";
-    cout << "Write any character to return..." << endl;
-    cin >> c;
+    cout << "Press Enter to return..." << endl;
+    cin.ignore();
+    cout << "Returning..." << endl;
+}
+
+void App::cancelRequest(){
+    string stucode,uc,classe,wait;
+    cout <<    "╒═════════════════════════════════════════════════════════╕\n"
+               "│                      Cancel Request                     │\n"
+               "╞═════════════════════════════════════════════════════════╡\n"
+               "│  To cancel a request write the Student Code, Uc Code    │\n"
+               "│  and the Class Code of the request you want to cancel.  │\n"
+               "╞═════════════════════════════════════════════════════════╡\n"
+               "│  Return                                            [1]  │\n"
+               "╘═════════════════════════════════════════════════════════╛\n"
+               "                                               \n";
+    cout << "Write the Student Code:" << endl;
+    cin >> stucode;
+    cout << "Write the Uc Code:" << endl;
+    cin >> uc;
+    cout << "Write the Class Code:" << endl;
+    cin >> classe;
+    vector<Request>::iterator i=horario.requests_.begin();
+    bool b=false;
+    for(Request r :horario.requests_){
+        if(r.getUc()==uc && r.getStudentCode()==stucode && r.getClass()==classe){
+            horario.requests_.erase(i);
+            b=true;
+        }
+        i++;
+    }
+    if(b==true){
+        cout << "Request Canceled..." << endl;
+    }else{
+        cout << "Error Request not found please insert valid request..." << endl;
+    }
+    cout << "Press Enter to return..." << endl;
+    cin.ignore();
+    cin.ignore();
+    cout << "Returning..." << endl;
 }

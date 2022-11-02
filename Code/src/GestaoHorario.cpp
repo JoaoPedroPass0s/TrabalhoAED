@@ -96,8 +96,9 @@ void GestaoHorario::listAllStudents(){
     for(Student s:students_){
         cout << s.getName() << " " << s.getId()<< endl;
     }
-    cout << "Write any character to return..." << endl;
-    cin >> wait ;
+    cout << "Press Enter to return..." << endl;
+    cin.ignore();
+    cout << "Returning..." << endl;
 }
 
 

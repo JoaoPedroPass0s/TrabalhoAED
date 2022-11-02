@@ -14,7 +14,6 @@ public:
     int getId() const;
     string getName() const;
     vector<UCClass> getClasses() const;
-
     bool operator== (const Student &s) const;
     bool operator< (const Student &s) const;
     bool operator> (const Student &s) const;
