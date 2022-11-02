@@ -56,6 +56,6 @@ int main() {
         UCClass ucclass = *new UCClass(lista[2], lista[3]);
         classes.push_back(ucclass);
         Student s = *new Student(stoi(lista[0]), lista[1], classes);
-        Insert(new StudentNode(stoi(lista[0]), s));
+        Insert(new StudentNode(stoi(lista[0]), s), stoi(lista[0]), s);
     }
 }
