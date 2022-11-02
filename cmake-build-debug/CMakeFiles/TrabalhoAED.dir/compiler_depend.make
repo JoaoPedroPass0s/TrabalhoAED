@@ -728,7 +728,12 @@ CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.o: ../Code/src/Request.cpp \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc
 
 CMakeFiles/TrabalhoAED.dir/Code/src/Slot.cpp.o: ../Code/src/Slot.cpp \
   /usr/include/stdc-predef.h \

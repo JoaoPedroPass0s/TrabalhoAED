@@ -12,7 +12,7 @@ public:
     void start();
     bool printUserMenu();
     void printStudentSchedule();
-    void printMakeRequest();
+    bool printMakeRequest();
     void printRequestList();
     void cancelRequest();
 private:
