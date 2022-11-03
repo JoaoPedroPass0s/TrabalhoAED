@@ -108,7 +108,7 @@ void GestaoHorario::AddStudentsToClasses() {
     for(Student s:students_){
         for(UCClass u:s.getClasses()){
             for(HClass h:horarioC_){
-                if(h.getUc()==u.getUc() and h.getClass()==u.getClass()){
+                if(h.getUc()==u.getUc() && h.getClass()==u.getClass()){
                     h.InsertStudent(s);
                 }
             }
