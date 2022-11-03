@@ -6,6 +6,7 @@
 #include <vector>
 #include <sstream>
 #include <algorithm>
+#include <cstring>
 
 void GestaoHorario::readFileStudents(){
     std::ifstream classes;
@@ -103,10 +104,21 @@ void GestaoHorario::listAllStudents(){
     cout << "Returning..." << endl;
 }
 
-/*
-unsigned long GestaoHorario::binarySearchHorario(const UCClass &ucclass) const {
+void GestaoHorario::AddStudentsToClasses() {
+    for(Student s:students_){
+        for(UCClass u:s.getClasses()){
+            for(HClass h:horarioC_){
+                if(h.getUc()==u.getUc() and h.getClass()==u.getClass()){
+                    h.InsertStudent(s);
+                }
+            }
+        }
+    }
+}
 
+unsigned long GestaoHorario::binarySearchHorario(const UCClass &ucclass) const {
+    /*
     unsigned long left = 0;
-    unsigned long right = schedule.size() - 1;
-    unsigned long middle = (left + right) / 2;
-} */
+    unsigned long right =
+     */
+}

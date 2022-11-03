@@ -18,6 +18,7 @@ public:
     void processRequest();
     void listAllStudents();
     void readFileClasses();
+    void AddStudentsToClasses();
     unsigned long binarySearchHorario(const UCClass &ucclass) const;
     vector<Student> students_;
     vector<HClass> horarioC_;

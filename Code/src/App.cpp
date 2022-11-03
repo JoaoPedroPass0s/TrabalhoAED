@@ -11,8 +11,9 @@ using namespace std;
 
 void App::start(){
     std::cout << "Hello, World!" << std::endl;
-    horario.readFileClasses();
     horario.readFileStudents();
+    horario.readFileClasses();
+    horario.AddStudentsToClasses();
     while (true) {
         if(!printUserMenu()){
             break;
@@ -61,10 +62,10 @@ bool App::printUserMenu() {
         case 22:
             for(HClass h:horario.horarioC_){
                 for(Student s:h.getStudentList()){
-                    cout << s.getId()<< s.getName()<< endl;
+                    cout << s.getId() << " " << s.getName() << endl;
                 }
             }
-            cout << horario.horarioC_.size() << endl;
+            cout << horario.horarioC_.size()<< " "<< horario.students_.size() << endl;
             break;
         case 23:
 

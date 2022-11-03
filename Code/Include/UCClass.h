@@ -15,7 +15,7 @@ public:
     string getClass() const;
 private:
     string uc_;
-    string class_;
+    string classe_;
 };
 
 
