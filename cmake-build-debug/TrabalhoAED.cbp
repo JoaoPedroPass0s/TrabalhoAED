@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug"/>
+				<Option working_dir="/home/pedropassos/TrabalhoAED/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TrabalhoAED">
-				<Option output="/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/TrabalhoAED" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug"/>
+				<Option output="/home/pedropassos/TrabalhoAED/cmake-build-debug/TrabalhoAED" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pedropassos/TrabalhoAED/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrabalhoAED"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrabalhoAED"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TrabalhoAED/fast">
-				<Option output="/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/TrabalhoAED" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug"/>
+				<Option output="/home/pedropassos/TrabalhoAED/cmake-build-debug/TrabalhoAED" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pedropassos/TrabalhoAED/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,64 +55,58 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrabalhoAED/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 TrabalhoAED/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug"/>
+				<Option working_dir="/home/pedropassos/TrabalhoAED/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug"/>
+				<Option working_dir="/home/pedropassos/TrabalhoAED/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/pedropassos/TrabalhoAED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/Testing/UnitTesting.cpp">
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/App.cpp">
 			<Option target="TrabalhoAED"/>
 		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/Testing/doctest.h">
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/GestaoHorario.cpp">
 			<Option target="TrabalhoAED"/>
 		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/src/App.cpp">
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/HClass.cpp">
 			<Option target="TrabalhoAED"/>
 		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/src/GestaoHorario.cpp">
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/Request.cpp">
 			<Option target="TrabalhoAED"/>
 		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/src/HClass.cpp">
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/Slot.cpp">
 			<Option target="TrabalhoAED"/>
 		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/src/Request.cpp">
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/Student.cpp">
 			<Option target="TrabalhoAED"/>
 		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/src/Slot.cpp">
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/UCClass.cpp">
 			<Option target="TrabalhoAED"/>
 		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/src/Student.cpp">
+		<Unit filename="/home/pedropassos/TrabalhoAED/Code/src/main.cpp">
 			<Option target="TrabalhoAED"/>
 		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/src/UCClass.cpp">
-			<Option target="TrabalhoAED"/>
-		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/Code/src/main.cpp">
-			<Option target="TrabalhoAED"/>
-		</Unit>
-		<Unit filename="/home/mariana/Desktop/aeed/TrabalhoAED/CMakeLists.txt">
+		<Unit filename="/home/pedropassos/TrabalhoAED/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

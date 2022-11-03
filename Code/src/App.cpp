@@ -72,7 +72,7 @@ bool App::printUserMenu() {
 }
 
 void App::printStudentSchedule(){
-    int code;
+    string code;
     cout <<    "╒═════════════════════════════════════════════╕\n"
                "│             Student Classes                 │\n"
                "╞═════════════════════════════════════════════╡\n"
@@ -83,7 +83,7 @@ void App::printStudentSchedule(){
                "                                               \n";
     cin >> code;
     cin.ignore();
-    if(code!=1) {
+    if(code!="1") {
         Student student;
         for (Student s: horario.students_) {
             if (s.getId() == code) {
@@ -221,9 +221,9 @@ void App::cancelRequest(){
         }
         horario.requests_.erase(ite);
         cout << "Request Canceled..." << endl;
+        cout << "Press Enter to return..." << endl;
+        cin.ignore();
+        cin.ignore();
     }
-    cout << "Press Enter to return..." << endl;
-    cin.ignore();
-    cin.ignore();
     cout << "Returning..." << endl;
 }

@@ -57,10 +57,10 @@ RM = /snap/clion/209/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mariana/Desktop/aeed/TrabalhoAED
+CMAKE_SOURCE_DIR = /home/pedropassos/TrabalhoAED
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug
+CMAKE_BINARY_DIR = /home/pedropassos/TrabalhoAED/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/CMakeFiles /home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedropassos/TrabalhoAED/cmake-build-debug/CMakeFiles /home/pedropassos/TrabalhoAED/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pedropassos/TrabalhoAED/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,30 +128,6 @@ TrabalhoAED: cmake_check_build_system
 TrabalhoAED/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/build
 .PHONY : TrabalhoAED/fast
-
-Code/Testing/UnitTesting.o: Code/Testing/UnitTesting.cpp.o
-.PHONY : Code/Testing/UnitTesting.o
-
-# target to build an object file
-Code/Testing/UnitTesting.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/Testing/UnitTesting.cpp.o
-.PHONY : Code/Testing/UnitTesting.cpp.o
-
-Code/Testing/UnitTesting.i: Code/Testing/UnitTesting.cpp.i
-.PHONY : Code/Testing/UnitTesting.i
-
-# target to preprocess a source file
-Code/Testing/UnitTesting.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/Testing/UnitTesting.cpp.i
-.PHONY : Code/Testing/UnitTesting.cpp.i
-
-Code/Testing/UnitTesting.s: Code/Testing/UnitTesting.cpp.s
-.PHONY : Code/Testing/UnitTesting.s
-
-# target to generate assembly for a file
-Code/Testing/UnitTesting.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TrabalhoAED.dir/build.make CMakeFiles/TrabalhoAED.dir/Code/Testing/UnitTesting.cpp.s
-.PHONY : Code/Testing/UnitTesting.cpp.s
 
 Code/src/App.o: Code/src/App.cpp.o
 .PHONY : Code/src/App.o
@@ -354,9 +330,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TrabalhoAED"
-	@echo "... Code/Testing/UnitTesting.o"
-	@echo "... Code/Testing/UnitTesting.i"
-	@echo "... Code/Testing/UnitTesting.s"
 	@echo "... Code/src/App.o"
 	@echo "... Code/src/App.i"
 	@echo "... Code/src/App.s"

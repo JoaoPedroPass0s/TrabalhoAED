@@ -9,7 +9,7 @@
 void GestaoHorario::readFileStudents(){
     std::ifstream classes;
     classes.open("/home/pedropassos/TrabalhoAED/Code/schedule/students_classes.csv");
-    int id=0;
+    string id="";
     string name="";
     string line;
     vector<UCClass> classesStu;
@@ -20,18 +20,17 @@ void GestaoHorario::readFileStudents(){
         string nameStu;
         string idStu;
         getline(inputString,idStu,',');
-        int id_ = atoi(idStu.c_str());
         getline(inputString,nameStu,',');
         getline(inputString,ucCode,',');
         getline(inputString,classCode,',');
-        if(id==0){
-            id=id_;
+        if(id==""){
+            id=idStu;
             name=nameStu;
         }
-        if(id!=id_){
+        if(id!=idStu){
             Student student(id,name,classesStu);
             students_.push_back(student);
-            id=id_;
+            id=idStu;
             name=nameStu;
             classesStu.clear();
         }
@@ -104,6 +103,8 @@ void GestaoHorario::listAllStudents(){
 }
 
 unsigned long GestaoHorario::binarySearchHorario(const UCClass &ucclass) const {
+    /*
     unsigned long left = 0;
     unsigned long right =
+     */
 }
