@@ -103,9 +103,10 @@ void GestaoHorario::listAllStudents(){
     cout << "Returning..." << endl;
 }
 
+/*
 unsigned long GestaoHorario::binarySearchHorario(const UCClass &ucclass) const {
-    /*
+
     unsigned long left = 0;
-    unsigned long right =
-     */
-}
+    unsigned long right = schedule.size() - 1;
+    unsigned long middle = (left + right) / 2;
+} */
