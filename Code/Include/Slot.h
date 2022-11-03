@@ -11,17 +11,19 @@ using namespace std;
 
 class Slot {
 public:
-    Slot(string weekDay, double startHour, double endHour, string classType);
+    Slot(string weekDay, float startHour, float endHour, string classType);
     string getWeekDay() const;
     string getClassType() const;
-    double getStartHour() const;
-    double getEndHour() const;
+    float getStartHour() const;
+    float getDuration() const;
+    float getEndHour() const;
 
 
 private:
     string weekDay_;
-    double startHour_;
-    double endHour_;
+    float startHour_;
+    float duration_;
+    float endHour_;
     string classType_;
 };
 
