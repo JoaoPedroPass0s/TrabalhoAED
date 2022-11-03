@@ -9,9 +9,9 @@ using namespace std;
 
 class Student {
 public:
-    Student(int id, string name,vector<UCClass> classes);
+    Student(string id, string name,vector<UCClass> classes);
     Student();
-    int getId() const;
+    string getId() const;
     string getName() const;
     vector<UCClass> getClasses() const;
     bool operator== (const Student &s) const;
@@ -19,7 +19,7 @@ public:
     bool operator> (const Student &s) const;
 
 private:
-    int id_;
+    string id_;
     string name_;
     vector<UCClass> classes_;
 };

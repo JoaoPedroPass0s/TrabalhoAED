@@ -12,15 +12,18 @@ using namespace std;
 
 
 class GestaoHorario {
-    public:
-        void readFileStudents();
-        void saveRequest(Request request);
-        void processRequest();
-        void listAllStudents();
-        void readFileClasses();
-        vector <Student> students_;
-        vector <HClass> horarioC_;
-        vector <Request> requests_;
+public:
+    void readFileStudents();
+    void saveRequest(Request request);
+    void processRequest();
+    void listAllStudents();
+    void readFileClasses();
+    unsigned long binarySearchHorario(const UCClass &ucclass) const;
+
+private:
+    vector<Student> students_;
+    vector<HClass> horarioC_;
+    vector<Request> requests_;
 };
 
 
