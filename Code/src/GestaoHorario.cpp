@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <algorithm>
 
 void GestaoHorario::readFileStudents(){
     std::ifstream classes;
@@ -44,11 +45,10 @@ void GestaoHorario::readFileStudents(){
 void GestaoHorario::readFileClasses(){
     std::ifstream classes;
     classes.open("/home/pedropassos/TrabalhoAED/Code/schedule/classes.csv");
-    string classCode="";
-    string ucCode="";
     string line;
     list<Slot> classUChour;
     while(getline(classes,line)){
+        bool b=true;
         stringstream inputString(line);
         string ucCode_;
         string classCode_;
@@ -64,22 +64,22 @@ void GestaoHorario::readFileClasses(){
         getline(inputString,duration,',');
         double endHour = start + atof(duration.c_str());
         getline(inputString,classType,',');
-        if(ucCode==""){
-            ucCode=ucCode_;
-            classCode=classCode_;
+        for(HClass h:horarioC_){
+            if(h.getUc()==ucCode_ && h.getClass()==classCode_){
+                b=false;
+                Slot s(weekDay,start,endHour,classType);
+                h.InsertClassUCHour(s);
+                break;
+            }
         }
-        if(ucCode!=ucCode_){
-            HClass classH(ucCode,classCode,classUChour);
-            horarioC_.push_back(classH);
-            ucCode=ucCode_;
-            classCode=classCode_;
-            classUChour.clear();
+        if(b){
+            HClass h(ucCode_,classCode_);
+            Slot s(weekDay,start,endHour,classType);
+            h.InsertClassUCHour(s);
+            horarioC_.push_back(h);
         }
-        Slot slot(weekDay,start,endHour,classType);
-        classUChour.push_back(slot);
+
     }
-    HClass classH(ucCode,classCode,classUChour);
-    horarioC_.push_back(classH);
 }
 
 void GestaoHorario::saveRequest(Request request){
@@ -97,6 +97,7 @@ void GestaoHorario::listAllStudents(){
     for(Student s:students_){
         cout << s.getName() << " " << s.getId()<< endl;
     }
+    cout << "Number of Students:" << students_.size() << endl;
     cout << "Press Enter to return..." << endl;
     cin.ignore();
     cout << "Returning..." << endl;

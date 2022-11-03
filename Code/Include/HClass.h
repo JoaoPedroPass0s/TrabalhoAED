@@ -5,18 +5,23 @@
 
 #include <list>
 #include "../Include/Slot.h"
+#include "Student.h"
+
 using namespace std;
 
 
 class HClass {
 public:
-    HClass(string uc, string classes, list<Slot> classUcHour);
+    HClass(string uc, string classes);
     string getUc() const;
     string getClass() const;
     list<Slot> getClassUcHour() const;
-
+    list<Student> getStudentList() const;
+    void InsertStudent(Student);
+    void InsertClassUCHour(Slot);
 private:
     list<Slot> classUcHour_;
+    list<Student> liststudents_;
     string uc_;
     string class_;
 };
