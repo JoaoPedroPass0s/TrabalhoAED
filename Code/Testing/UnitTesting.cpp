@@ -9,7 +9,10 @@
 #include "../src/Student.cpp"
 #include "../src/UCClass.cpp"
 
- /*
+
+#include "../Testing/igloo/igloo.h"
+
+/*
 //test the code already written in cpp
 
 using namespace igloo;
