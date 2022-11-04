@@ -16,12 +16,12 @@ public:
     string getUc() const;
     string getClass() const;
     list<Slot> getClassUcHour() const;
-    list<Student> getStudentList() const;
+    vector<Student> getStudentList() const;
     void InsertStudent(Student);
     void InsertClassUCHour(Slot);
 private:
     list<Slot> classUcHour_;
-    list<Student> liststudents_;
+    vector<Student> liststudents_;
     string uc_;
     string class_;
 };

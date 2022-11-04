@@ -4,7 +4,7 @@
 string HClass::getClass() const {return class_; }
 string HClass::getUc() const {return uc_; }
 list<Slot> HClass::getClassUcHour() const {return classUcHour_; }
-list<Student> HClass::getStudentList() const {return liststudents_;}
+vector<Student> HClass::getStudentList() const {return liststudents_;}
 
 HClass::HClass(string uc, string classes): uc_(uc), class_(classes){}
 

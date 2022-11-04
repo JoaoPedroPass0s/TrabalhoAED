@@ -33,8 +33,8 @@ bool App::printUserMenu() {
                "│             Request Management              │             Schedule Visualization          │\n"
                "╞═════════════════════════════════════════════╪═════════════════════════════════════════════╡\n"
                "│  Make Request                          [11] │  View Student Classes                  [21] │\n"
-               "│  Cancel Request                        [12] │  View UC Classes                       [22] │\n"
-               "│  Request list                          [13] │  View UC Schedule                      [23] │\n"
+               "│  Cancel Request                        [12] │  View Uc Classes                       [22] │\n"
+               "│  Request list                          [13] │  View Class Schedule                   [23] │\n"
                "╞═════════════════════════════════════════════╡  View Student List                     [24] │\n"
                "│                Other operations             │                                             │\n"
                "╞═════════════════════════════════════════════╡                                             │\n"
@@ -60,14 +60,15 @@ bool App::printUserMenu() {
         case 21:
             printStudentSchedule();
             break;
-        case 22:
-            for(HClass h:horario.horarioC_){
-                cout << h.getUc() << " " << h.getClass() << endl;
+        case 22: {
+            for (HClass h: horario.horarioC_) {
+                cout << h.getUc() << " " << h.getClass() << " " << h.getStudentList().size() << endl;
                 for(Student s:h.getStudentList()){
                     cout << s.getId() << " " << s.getName() << endl;
                 }
             }
             break;
+        }
         case 23:
 
         case 24:

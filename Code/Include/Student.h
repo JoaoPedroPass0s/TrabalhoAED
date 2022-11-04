@@ -15,11 +15,11 @@ public:
     string getId() const;
     string getName() const;
     vector<UCClass> getClasses() const;
-    void RemoveClass(Request);
+    bool RemoveClass(Request);
+    bool addClass(Request);
     bool operator== (const Student &s) const;
     bool operator< (const Student &s) const;
     bool operator> (const Student &s) const;
-
 private:
     string id_;
     string name_;
