@@ -10,7 +10,7 @@
 
 void GestaoHorario::readFileStudents(){
     std::ifstream students;
-    students.open("/home/pedropassos/TrabalhoAED/Code/schedule/students_classes.csv");
+    students.open("C:/Users/User/CLionProjects/TrabalhoAED/Code/schedule/students_classes.csv");
     string id="";
     string name="";
     string line;
@@ -45,7 +45,7 @@ void GestaoHorario::readFileStudents(){
 
 void GestaoHorario::readFileClasses(){
     std::ifstream classes;
-    classes.open("/home/pedropassos/TrabalhoAED/Code/schedule/classes.csv");
+    classes.open("C:/Users/User/CLionProjects/TrabalhoAED/Code/schedule/classes.csv");
     string line;
     list<Slot> classUChour;
     while(getline(classes,line)){
@@ -65,11 +65,11 @@ void GestaoHorario::readFileClasses(){
         getline(inputString,duration,',');
         double endHour = start + atof(duration.c_str());
         getline(inputString,classType,'\r');
-        for(HClass h:horarioC_){
-            if(h.getUc()==ucCode_ && h.getClass()==classCode_){
+        for(unsigned i = 0; i < horarioC_.size(); i++){
+            if(horarioC_[i].getUc()==ucCode_ && horarioC_[i].getClass()==classCode_){
                 b=false;
                 Slot s(weekDay,start,endHour,classType);
-                h.InsertClassUCHour(s);
+                horarioC_[i].InsertClassUCHour(s);
                 break;
             }
         }
@@ -84,7 +84,7 @@ void GestaoHorario::readFileClasses(){
 
 void GestaoHorario::readFileRequests(){
     std::ifstream requests;
-    requests.open("/home/pedropassos/TrabalhoAED/Code/schedule/Declined_Requests.csv");
+    requests.open("C:/Users/User/CLionProjects/TrabalhoAED/Code/schedule/Declined_Requests.csv");
     string line;
     getline(requests,line);
     while(getline(requests,line)){
@@ -110,7 +110,7 @@ void GestaoHorario::saveRequest(Request request){
 
 void GestaoHorario::processRequest(){
     ofstream declinedRequests;
-    declinedRequests.open("/home/pedropassos/TrabalhoAED/Code/schedule/Declined_Requests.csv");
+    declinedRequests.open("C:/Users/User/CLionProjects/TrabalhoAED/Code/schedule/Declined_Requests.csv");
     declinedRequests << "Uc" << "," << "ClassIn" << "," << "ClassOut"
                      << "," << "StudentCode" << "," << "RequestType" << endl;
     for(Request r:requests_){
@@ -140,7 +140,7 @@ void GestaoHorario::processRequest(){
         }
     }
     ofstream myFile;
-    myFile.open("/home/pedropassos/TrabalhoAED/Code/schedule/Modified_Students.csv");
+    myFile.open("C:/Users/User/CLionProjects/TrabalhoAED/Code/schedule/Modified_Students.csv");
     for(Student s:students_){
         for(UCClass u:s.getClasses()){
             myFile << s.getId() << "," << s.getName() << "," << u.getUc() << "," << u.getClass() << endl;
@@ -174,5 +174,3 @@ void GestaoHorario::addStudentsToClasses() {
 bool GestaoHorario::canClassesBeTogether(UCClass c1,UCClass c2){
 
 }
-
-

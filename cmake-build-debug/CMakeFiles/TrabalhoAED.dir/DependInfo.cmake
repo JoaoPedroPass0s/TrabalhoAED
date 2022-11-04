@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pedropassos/TrabalhoAED/Code/src/App.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o.d"
-  "/home/pedropassos/TrabalhoAED/Code/src/GestaoHorario.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o.d"
-  "/home/pedropassos/TrabalhoAED/Code/src/HClass.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.o" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.o.d"
-  "/home/pedropassos/TrabalhoAED/Code/src/Request.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.o" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.o.d"
-  "/home/pedropassos/TrabalhoAED/Code/src/Slot.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/Slot.cpp.o" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/Slot.cpp.o.d"
-  "/home/pedropassos/TrabalhoAED/Code/src/Student.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.o" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.o.d"
-  "/home/pedropassos/TrabalhoAED/Code/src/UCClass.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/UCClass.cpp.o" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/UCClass.cpp.o.d"
-  "/home/pedropassos/TrabalhoAED/Code/src/main.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o.d"
+  "C:/Users/User/CLionProjects/TrabalhoAED/Code/src/App.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.obj" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.obj.d"
+  "C:/Users/User/CLionProjects/TrabalhoAED/Code/src/GestaoHorario.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.obj" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.obj.d"
+  "C:/Users/User/CLionProjects/TrabalhoAED/Code/src/HClass.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.obj" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.obj.d"
+  "C:/Users/User/CLionProjects/TrabalhoAED/Code/src/Request.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.obj" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.obj.d"
+  "C:/Users/User/CLionProjects/TrabalhoAED/Code/src/Slot.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/Slot.cpp.obj" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/Slot.cpp.obj.d"
+  "C:/Users/User/CLionProjects/TrabalhoAED/Code/src/Student.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.obj" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.obj.d"
+  "C:/Users/User/CLionProjects/TrabalhoAED/Code/src/UCClass.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/UCClass.cpp.obj" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/UCClass.cpp.obj.d"
+  "C:/Users/User/CLionProjects/TrabalhoAED/Code/src/main.cpp" "CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.obj" "gcc" "CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

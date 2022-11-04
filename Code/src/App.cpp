@@ -63,14 +63,15 @@ bool App::printUserMenu() {
         case 22: {
             for (HClass h: horario.horarioC_) {
                 cout << h.getUc() << " " << h.getClass() << " " << h.getStudentList().size() << endl;
-                for(Student s:h.getStudentList()){
-                    cout << s.getId() << " " << s.getName() << endl;
+                for(Slot s : h.getClassUcHour()){
+                    cout << s.getEndHour() << " " << s.getClassType() << endl;
                 }
             }
             break;
         }
         case 23:
-
+            printClassSchedule();
+            break;
         case 24:
             horario.listAllStudents();
             break;
@@ -106,6 +107,56 @@ void App::printStudentSchedule(){
         for(UCClass uc:student.getClasses()){
             cout <<    "                 "<< uc.getUc() << endl <<
                  "                 "<< uc.getClass() << endl <<
+                 "╞═════════════════════════════════════════════╡\n";
+        }
+        cout << "│  Return                                [1]  │\n"
+                "╘═════════════════════════════════════════════╛\n"
+                "                                               \n";
+        cin.ignore();
+        cout << "Returning..." << endl;
+    }
+}
+
+void App::printClassSchedule() {
+    string uccode;
+    string classcode;
+    cout <<    "╒═════════════════════════════════════════════╕\n"
+               "│                   Uc Code                   │\n"
+               "╞═════════════════════════════════════════════╡\n"
+               "│  Write the Uc Code too see its schedule     │\n"
+               "╞═════════════════════════════════════════════╡\n"
+               "│  Return                                [1]  │\n"
+               "╘═════════════════════════════════════════════╛\n"
+               "                                               \n";
+    cin >> uccode;
+
+    cout <<    "╒═════════════════════════════════════════════╕\n"
+               "│                  Class Code                 │\n"
+               "╞═════════════════════════════════════════════╡\n"
+               "│  Write the Class Code too see its schedule  │\n"
+               "╞═════════════════════════════════════════════╡\n"
+               "│  Return                                [1]  │\n"
+               "╘═════════════════════════════════════════════╛\n"
+               "                                               \n";
+    cin >> classcode;
+    cin.ignore();
+
+    if(classcode != "1" and uccode != "1") {
+        HClass classSchedule;
+        for(HClass h : horario.horarioC_) {
+            if(h.getUc() == uccode and h.getClass() == classcode) {
+                classSchedule = h;
+            }
+        }
+
+        cout <<    "╒═════════════════════════════════════════════╕\n"
+                   "          Class Code: "<< classSchedule.getClass() << endl <<
+             "╞═════════════════════════════════════════════╡\n";
+        for(Slot sch : classSchedule.getClassUcHour()){
+            cout <<    "                 "<< sch.getWeekDay() << endl <<
+                 "                 "<< sch.getClassType() << endl <<
+                 "                 "<< sch.getStartHour() << endl <<
+                 "                 "<< sch.getEndHour() << endl <<
                  "╞═════════════════════════════════════════════╡\n";
         }
         cout << "│  Return                                [1]  │\n"

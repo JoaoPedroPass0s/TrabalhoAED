@@ -13,6 +13,7 @@ using namespace std;
 class HClass {
 public:
     HClass(string uc, string classes);
+    HClass();
     string getUc() const;
     string getClass() const;
     list<Slot> getClassUcHour() const;

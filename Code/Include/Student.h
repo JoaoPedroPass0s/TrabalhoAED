@@ -17,9 +17,6 @@ public:
     vector<UCClass> getClasses() const;
     bool RemoveClass(Request);
     bool addClass(Request);
-    bool operator== (const Student &s) const;
-    bool operator< (const Student &s) const;
-    bool operator> (const Student &s) const;
 private:
     string id_;
     string name_;

@@ -1,4 +1,4 @@
-/snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/pedropassos/TrabalhoAED -B /home/pedropassos/TrabalhoAED/cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\User\CLionProjects\TrabalhoAED -B C:\Users\User\CLionProjects\TrabalhoAED\cmake-build-debug
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/pedropassos/TrabalhoAED/cmake-build-debug
+-- Build files have been written to: C:/Users/User/CLionProjects/TrabalhoAED/cmake-build-debug
