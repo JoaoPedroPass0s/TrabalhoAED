@@ -33,7 +33,7 @@ bool App::printUserMenu() {
                "│             Request Management              │             Schedule Visualization          │\n"
                "╞═════════════════════════════════════════════╪═════════════════════════════════════════════╡\n"
                "│  Make Request                          [11] │  View Student Classes                  [21] │\n"
-               "│  Cancel Request                        [12] │  View Uc Classes                       [22] │\n"
+               "│  Cancel Request                        [12] │  View Uc Class                         [22] │\n"
                "│  Request list                          [13] │  View Class Schedule                   [23] │\n"
                "╞═════════════════════════════════════════════╡  View Student List                     [24] │\n"
                "│                Other operations             │                                             │\n"
@@ -60,10 +60,9 @@ bool App::printUserMenu() {
         case 21:
             printStudentSchedule();
             break;
-        case 22: {
-            printUcClasses();
+        case 22:
+            printUcClassesStudents();
             break;
-        }
         case 23:
             printClassSchedule();
             break;
@@ -112,24 +111,33 @@ void App::printStudentSchedule(){
     }
 }
 
-void App::printUcClasses() {
-    string uccode;
+void App::printUcClassesStudents() {
+    string uccode,classcode;
     cout <<    "╒═════════════════════════════════════════════╕\n"
                "│                   Uc Code                   │\n"
                "╞═════════════════════════════════════════════╡\n"
-               "│  Write the Uc Code too see its schedule     │\n"
+               "│  Write the Uc Code                          │\n"
                "╞═════════════════════════════════════════════╡\n"
                "│  Return                                [1]  │\n"
                "╘═════════════════════════════════════════════╛\n"
                "                                               \n";
     cin >> uccode;
+    cout <<    "╒═════════════════════════════════════════════╕\n"
+               "│                  Class Code                 │\n"
+               "╞═════════════════════════════════════════════╡\n"
+               "│  Write the Class Code                       │\n"
+               "╞═════════════════════════════════════════════╡\n"
+               "│  Return                                [1]  │\n"
+               "╘═════════════════════════════════════════════╛\n"
+               "                                               \n";
+    cin >> classcode;
     cin.ignore();
-    if(uccode != "1") {
+    if(uccode != "1" && classcode != "1") {
 
         cout <<    "╒═════════════════════════════════════════════╕\n"
                    "          UC Code:    "<< uccode << "\n";
         for(HClass h : horario.horarioC_) {
-            if(uccode == h.getUc()) {
+            if(uccode == h.getUc() && classcode==h.getClass()) {
                 cout << "╞═════════════════════════════════════════════╡\n"
                         "          Class Code:    " << h.getClass() << endl <<
                      "╞═════════════════════════════════════════════╡\n";

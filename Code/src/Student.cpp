@@ -21,12 +21,7 @@ bool Student::RemoveClass(Request r) {
     return false;
 }
 
-bool Student::addClass(Request r){
-    for(UCClass u:classes_){
-        if(u.getUc()==r.getUc() && u.getClass()==r.getClassIn()){
-
-            return true;
-        }
-    }
-    return false;
+void Student::addClass(Request r){
+    UCClass u(r.getUc(),r.getClassOut());
+    classes_.push_back(u);
 }

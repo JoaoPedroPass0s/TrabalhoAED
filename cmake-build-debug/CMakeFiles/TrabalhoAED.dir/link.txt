@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\TrabalhoAED.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\TrabalhoAED.dir/objects.a @CMakeFiles\TrabalhoAED.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\TrabalhoAED.dir/objects.a -Wl,--no-whole-archive -o TrabalhoAED.exe -Wl,--out-implib,libTrabalhoAED.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TrabalhoAED.dir\linklibs.rsp
+/usr/bin/c++ -g CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.o CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.o CMakeFiles/TrabalhoAED.dir/Code/src/Slot.cpp.o CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.o CMakeFiles/TrabalhoAED.dir/Code/src/UCClass.cpp.o CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o -o TrabalhoAED 

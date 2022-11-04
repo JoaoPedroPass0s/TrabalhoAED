@@ -16,7 +16,7 @@ public:
     void printRequestList();
     void cancelRequest();
     void printClassSchedule();
-    void printUcClasses();
+    void printUcClassesStudents();
 private:
     GestaoHorario horario;
 };
