@@ -23,7 +23,7 @@ private:
     string weekDay_;
     float startHour_;
     float duration_;
-    float endHour_;
+    float endHour_ = startHour_ + duration_;
     string classType_;
 };
 

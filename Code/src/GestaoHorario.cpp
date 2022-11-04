@@ -163,12 +163,3 @@ void GestaoHorario::addStudentsToClasses() {
         }
     }
 }
-
-unsigned long GestaoHorario::binarySearchHorario(const UCClass &ucclass) const {
-    /*
-    unsigned long left = 0;
-    unsigned long right =
-     */
-}
-
-
