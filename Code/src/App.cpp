@@ -113,7 +113,39 @@ void App::printStudentSchedule(){
 }
 
 void App::printUcClasses() {
+    string uccode;
+    cout <<    "╒═════════════════════════════════════════════╕\n"
+               "│                   Uc Code                   │\n"
+               "╞═════════════════════════════════════════════╡\n"
+               "│  Write the Uc Code too see its schedule     │\n"
+               "╞═════════════════════════════════════════════╡\n"
+               "│  Return                                [1]  │\n"
+               "╘═════════════════════════════════════════════╛\n"
+               "                                               \n";
+    cin >> uccode;
+    cin.ignore();
+    if(uccode != "1") {
 
+        cout <<    "╒═════════════════════════════════════════════╕\n"
+                   "          UC Code:    "<< uccode << "\n";
+        for(HClass h : horario.horarioC_) {
+            if(uccode == h.getUc()) {
+                cout << "╞═════════════════════════════════════════════╡\n"
+                        "          Class Code:    " << h.getClass() << endl <<
+                     "╞═════════════════════════════════════════════╡\n";
+                for (Student s: h.getStudentList()) {
+                    cout << "    Student Name:    " << s.getName() << endl <<
+                         "    Student ID:      " << s.getId() << endl <<
+                         "╞═════════════════════════════════════════════╡\n";
+                }
+            }
+        }
+        cout << "│  Return                                [1]  │\n"
+                "╘═════════════════════════════════════════════╛\n"
+                "                                               \n";
+        cin.ignore();
+        cout << "Returning..." << endl;
+    }
 }
 
 void App::printClassSchedule() {
