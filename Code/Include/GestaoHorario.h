@@ -21,7 +21,6 @@ public:
     void listAllStudents();
     void addStudentsToClasses();
     bool canClassesBeTogether(UCClass,UCClass);
-    unsigned long binarySearchHorario(const UCClass &ucclass) const;
     vector<Student> students_;
     vector<HClass> horarioC_;
     vector<Request> requests_;

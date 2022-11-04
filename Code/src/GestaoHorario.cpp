@@ -175,11 +175,4 @@ bool GestaoHorario::canClassesBeTogether(UCClass c1,UCClass c2){
 
 }
 
-unsigned long GestaoHorario::binarySearchHorario(const UCClass &ucclass) const {
-    /*
-    unsigned long left = 0;
-    unsigned long right =
-     */
-}
-
 
