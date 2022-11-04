@@ -15,6 +15,7 @@ void GestaoHorario::readFileStudents(){
     string name="";
     string line;
     vector<UCClass> classesStu;
+    getline(students,line);
     while(getline(students,line)){
         stringstream inputString(line);
         string ucCode;
@@ -131,15 +132,30 @@ void GestaoHorario::processRequest(){
                             b=false;
                         }
                     }
-                }
-                if(b){
-                    students_[i].addClass(r);
+                    if(b){
+                        valid=true;
+                        students_[i].addClass(r.getUc(),r.getClassOut());
+                    }
                 }
             }
         }else if(r.getRequestType()=="Change"){
+            bool b=true;
+
             for(int i=0;i<students_.size();i++){
                 if(students_[i].getId()==r.getStudentCode()){
-                    valid=students_[i].RemoveClass(r);
+                    students_[i].RemoveClass(r);
+                    for(UCClass c1:students_[i].getClasses()){
+                        UCClass c2(r.getUc(),r.getClassOut());
+                        if(!canClassesBeTogether(c1,c2)){
+                            b=false;
+                        }
+                    }
+                    if(b){
+                        valid=true;
+                        students_[i].addClass(r.getUc(),r.getClassOut());
+                    }else{
+                        students_[i].addClass(r.getUc(),r.getClassIn());
+                    }
                 }
             }
         }
@@ -193,7 +209,8 @@ bool GestaoHorario::canClassesBeTogether(UCClass c1,UCClass c2){
     }
     for(Slot s1:h1.getClassUcHour()){
         for(Slot s2:h2.getClassUcHour()){
-            if(!(s1.getClassType()=="T" or s2.getClassType()=="T")){
+            if((h2.getStudentList().size()<26) and (!(s1.getClassType()=="T" or s2.getClassType()=="T")) and (s1.getWeekDay()==s2.getWeekDay()) and ((s1.getStartHour()==s2.getStartHour() and s1.getEndHour()==s2.getEndHour()) or (s1.getStartHour()>s2.getStartHour() and s1.getStartHour()<s2.getEndHour()) or (s1.getEndHour()>s2.getStartHour() and s1.getEndHour()<s2.getEndHour()))){
+                return false;
             }
         }
     }

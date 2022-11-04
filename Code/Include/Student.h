@@ -16,7 +16,7 @@ public:
     string getName() const;
     vector<UCClass> getClasses() const;
     bool RemoveClass(Request);
-    void addClass(Request);
+    void addClass(string,string);
 private:
     string id_;
     string name_;

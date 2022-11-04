@@ -21,7 +21,7 @@ bool Student::RemoveClass(Request r) {
     return false;
 }
 
-void Student::addClass(Request r){
-    UCClass u(r.getUc(),r.getClassOut());
+void Student::addClass(string uc,string classe){
+    UCClass u(uc,classe);
     classes_.push_back(u);
 }

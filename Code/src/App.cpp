@@ -300,7 +300,6 @@ void App::printRequestList(){
 
 void App::cancelRequest(){
     int i=0,o;
-    cout << horario.requests_.size() << endl;
     cout << "╒════════════════════════════════════════════════════════════════════════════════════════════════════════════╕\n"
             "│                           Cancel Request - Chose the Request you want to Cancel                            │\n"
             "╞════════════════════════════════════════════════════════════════════════════════════════════════════════════╡\n";
