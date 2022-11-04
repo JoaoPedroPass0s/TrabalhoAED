@@ -180,16 +180,17 @@ CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o: ../Code/src/App.cpp \
   /usr/include/c++/11/bits/istream.tcc \
   ../Code/Include/Student.h \
   ../Code/Include/UCClass.h \
-  /usr/include/c++/11/list \
-  /usr/include/c++/11/bits/stl_list.h \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/list.tcc \
+  ../Code/Include/Request.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/list.tcc \
   ../Code/Include/App.h \
   ../Code/Include/GestaoHorario.h \
   /usr/include/c++/11/set \
@@ -207,7 +208,6 @@ CMakeFiles/TrabalhoAED.dir/Code/src/App.cpp.o: ../Code/src/App.cpp \
   ../Code/Include/Student.h \
   ../Code/Include/HClass.h \
   ../Code/Include/Slot.h \
-  ../Code/Include/Request.h \
   ../Code/Include/Request.h
 
 CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o: ../Code/src/GestaoHorario.cpp \
@@ -380,6 +380,7 @@ CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o: ../Code/src/GestaoHorar
   /usr/include/c++/11/bits/uses_allocator.h \
   ../Code/Include/Student.h \
   ../Code/Include/UCClass.h \
+  ../Code/Include/Request.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -415,7 +416,6 @@ CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o: ../Code/src/GestaoHorar
   /usr/include/c++/11/bits/list.tcc \
   ../Code/Include/HClass.h \
   ../Code/Include/Slot.h \
-  ../Code/Include/Request.h \
   /usr/include/c++/11/fstream \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -591,6 +591,12 @@ CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.o: ../Code/src/HClass.cpp \
   /usr/include/c++/11/bits/basic_string.tcc \
   ../Code/Include/Student.h \
   ../Code/Include/UCClass.h \
+  ../Code/Include/Request.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -619,12 +625,7 @@ CMakeFiles/TrabalhoAED.dir/Code/src/HClass.cpp.o: ../Code/src/HClass.cpp \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc
+  /usr/include/c++/11/bits/istream.tcc
 
 CMakeFiles/TrabalhoAED.dir/Code/src/Request.cpp.o: ../Code/src/Request.cpp \
   /usr/include/stdc-predef.h \
@@ -1081,6 +1082,12 @@ CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.o: ../Code/src/Student.cpp \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  ../Code/Include/Request.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -1114,12 +1121,7 @@ CMakeFiles/TrabalhoAED.dir/Code/src/Student.cpp.o: ../Code/src/Student.cpp \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/list.tcc \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc
+  /usr/include/c++/11/bits/list.tcc
 
 CMakeFiles/TrabalhoAED.dir/Code/src/UCClass.cpp.o: ../Code/src/UCClass.cpp \
   /usr/include/stdc-predef.h \
@@ -1469,13 +1471,13 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
   /usr/include/c++/11/bits/uses_allocator.h \
   ../Code/Include/Student.h \
   ../Code/Include/UCClass.h \
+  ../Code/Include/Request.h \
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/allocated_ptr.h \
   /usr/include/c++/11/bits/list.tcc \
   ../Code/Include/HClass.h \
   ../Code/Include/Slot.h \
-  ../Code/Include/Request.h \
   ../Code/Include/App.h \
   ../Code/Include/GestaoHorario.h \
   ../Code/Include/Student.h \
@@ -1520,13 +1522,13 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/c++/11/fstream:
 
-../Code/Include/Request.h:
-
 ../Code/Include/Slot.h:
 
 /usr/include/c++/11/bits/stl_queue.h:
 
 /usr/include/c++/11/bits/stl_deque.h:
+
+/usr/include/c++/11/deque:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
@@ -1806,8 +1808,6 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/c++/11/bits/nested_exception.h:
 
-/usr/include/c++/11/deque:
-
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /usr/include/asm-generic/errno-base.h:
@@ -1930,15 +1930,17 @@ CMakeFiles/TrabalhoAED.dir/Code/src/main.cpp.o: ../Code/src/main.cpp \
 
 /usr/include/c++/11/bits/istream.tcc:
 
+../Code/Include/Request.h:
+
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/stl_list.h:
+
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/c++/11/bits/stl_tree.h:
-
-/usr/include/c++/11/bits/stl_list.h:
-
-/usr/include/c++/11/bits/vector.tcc:
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 

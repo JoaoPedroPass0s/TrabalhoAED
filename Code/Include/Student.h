@@ -1,6 +1,7 @@
 #ifndef TRABALHOAED_STUDENT_H
 #define TRABALHOAED_STUDENT_H
 #include "../Include/UCClass.h"
+#include "Request.h"
 #include <iostream>
 #include <list>
 #include <string>
@@ -14,6 +15,7 @@ public:
     string getId() const;
     string getName() const;
     vector<UCClass> getClasses() const;
+    void RemoveClass(Request);
     bool operator== (const Student &s) const;
     bool operator< (const Student &s) const;
     bool operator> (const Student &s) const;

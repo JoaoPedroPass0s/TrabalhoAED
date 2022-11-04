@@ -9,13 +9,13 @@
 #include <cstring>
 
 void GestaoHorario::readFileStudents(){
-    std::ifstream classes;
-    classes.open("/home/pedropassos/TrabalhoAED/Code/schedule/students_classes.csv");
+    std::ifstream students;
+    students.open("/home/pedropassos/TrabalhoAED/Code/schedule/students_classes.csv");
     string id="";
     string name="";
     string line;
     vector<UCClass> classesStu;
-    while(getline(classes,line)){
+    while(getline(students,line)){
         stringstream inputString(line);
         string ucCode;
         string classCode;
@@ -24,7 +24,7 @@ void GestaoHorario::readFileStudents(){
         getline(inputString,idStu,',');
         getline(inputString,nameStu,',');
         getline(inputString,ucCode,',');
-        getline(inputString,classCode,',');
+        getline(inputString,classCode,'\r');
         if(id==""){
             id=idStu;
             name=nameStu;
@@ -79,7 +79,6 @@ void GestaoHorario::readFileClasses(){
             h.InsertClassUCHour(s);
             horarioC_.push_back(h);
         }
-
     }
 }
 
@@ -89,7 +88,25 @@ void GestaoHorario::saveRequest(Request request){
 
 void GestaoHorario::processRequest(){
     for(Request r:requests_){
+        bool valid=true;
+        if(r.getRequestType()=="Remove"){
+            for(int i=0;i<students_.size();i++){
+                if(students_[i].getId()==r.getStudentCode()){
+                    students_[i].RemoveClass(r);
+                }
+            }
+        }else if(r.getRequestType()=="Add"){
 
+        }else if(r.getRequestType()=="Change"){
+
+        }
+    }
+    ofstream myFile;
+    myFile.open("/home/pedropassos/TrabalhoAED/Code/schedule/Declined_Requests.csv");
+    for(Student s:students_){
+        for(UCClass u:s.getClasses()){
+            myFile << s.getId() << "," << s.getName() << "," << u.getUc() << "," << u.getClass() << endl;
+        }
     }
 }
 
@@ -107,9 +124,9 @@ void GestaoHorario::listAllStudents(){
 void GestaoHorario::AddStudentsToClasses() {
     for(Student s:students_){
         for(UCClass u:s.getClasses()){
-            for(HClass h:horarioC_){
-                if(h.getUc()==u.getUc() and h.getClass()==u.getClass()){
-                    h.InsertStudent(s);
+            for(int i=0;i<horarioC_.size();i++){
+                if(horarioC_[i].getUc()==u.getUc() and horarioC_[i].getClass()==u.getClass()){
+                    horarioC_[i].InsertStudent(s);
                 }
             }
         }
@@ -122,3 +139,5 @@ unsigned long GestaoHorario::binarySearchHorario(const UCClass &ucclass) const {
     unsigned long right =
      */
 }
+
+

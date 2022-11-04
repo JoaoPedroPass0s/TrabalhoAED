@@ -20,6 +20,7 @@ public:
     void readFileClasses();
     void AddStudentsToClasses();
     unsigned long binarySearchHorario(const UCClass &ucclass) const;
+    bool compareString(string basicString, string basicString1);
     vector<Student> students_;
     vector<HClass> horarioC_;
     vector<Request> requests_;

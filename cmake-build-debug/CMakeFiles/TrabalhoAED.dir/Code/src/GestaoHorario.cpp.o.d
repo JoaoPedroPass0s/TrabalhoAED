@@ -143,6 +143,7 @@ CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o: \
  /usr/include/c++/11/bits/uses_allocator.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/Student.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/UCClass.h \
+ /home/pedropassos/TrabalhoAED/Code/src/../Include/Request.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -170,7 +171,6 @@ CMakeFiles/TrabalhoAED.dir/Code/src/GestaoHorario.cpp.o: \
  /usr/include/c++/11/bits/list.tcc \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/HClass.h \
  /home/pedropassos/TrabalhoAED/Code/src/../Include/../Include/Slot.h \
- /home/pedropassos/TrabalhoAED/Code/src/../Include/Request.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \

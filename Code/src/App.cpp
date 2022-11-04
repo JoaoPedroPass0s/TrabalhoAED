@@ -61,11 +61,11 @@ bool App::printUserMenu() {
             break;
         case 22:
             for(HClass h:horario.horarioC_){
+                cout << h.getUc() << " " << h.getClass() << endl;
                 for(Student s:h.getStudentList()){
                     cout << s.getId() << " " << s.getName() << endl;
                 }
             }
-            cout << horario.horarioC_.size()<< " "<< horario.students_.size() << endl;
             break;
         case 23:
 
