@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug",
-		"source" : "/home/mariana/Desktop/aeed/TrabalhoAED"
+		"build" : "/home/pedropassos/TrabalhoAED/cmake-build-debug",
+		"source" : "/home/pedropassos/TrabalhoAED"
 	},
 	"version" : 
 	{

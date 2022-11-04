@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug"
+			"value" : "/home/pedropassos/TrabalhoAED/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-j4"
+			"value" : "-j16"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mariana/Desktop/aeed/TrabalhoAED"
+			"value" : "/home/pedropassos/TrabalhoAED"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1247,7 +1247,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mariana/Desktop/aeed/TrabalhoAED/cmake-build-debug"
+			"value" : "/home/pedropassos/TrabalhoAED/cmake-build-debug"
 		},
 		{
 			"name" : "TrabalhoAED_IS_TOP_LEVEL",
@@ -1271,7 +1271,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mariana/Desktop/aeed/TrabalhoAED"
+			"value" : "/home/pedropassos/TrabalhoAED"
 		}
 	],
 	"kind" : "cache",

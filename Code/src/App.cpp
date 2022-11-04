@@ -13,7 +13,8 @@ void App::start(){
     std::cout << "Hello, World!" << std::endl;
     horario.readFileStudents();
     horario.readFileClasses();
-    horario.AddStudentsToClasses();
+    horario.readFileRequests();
+    horario.addStudentsToClasses();
     while (true) {
         if(!printUserMenu()){
             break;
@@ -207,11 +208,12 @@ void App::printRequestList(){
 
 void App::cancelRequest(){
     int i=0,o;
+    cout << horario.requests_.size() << endl;
     cout << "╒════════════════════════════════════════════════════════════════════════════════════════════════════════════╕\n"
             "│                           Cancel Request - Chose the Request you want to Cancel                            │\n"
             "╞════════════════════════════════════════════════════════════════════════════════════════════════════════════╡\n";
     for(Request r:horario.requests_){
-        i++;
+        i+=1;
         cout << "  Student Code: " << r.getStudentCode() << " | Uc Code: " << r.getUc()
              << " | Current Class Code: " << r.getClassIn() << " | Target Class Code: "<< r.getClassOut() << " | Request Type: "
              << r.getRequestType() << " ["<< i <<"]" << endl;
@@ -220,9 +222,9 @@ void App::cancelRequest(){
             "│  Return                                                                                               ["<< i+1 << "]  │\n"
             "╘════════════════════════════════════════════════════════════════════════════════════════════════════════════╛\n";
     cin >> o;
-    if(!i+1==o) {
+    if(i+1!=o) {
         vector<Request>::iterator ite = horario.requests_.begin();
-        while (o != 0) {
+        while (o-1 != 0) {
             ite++;
             o--;
         }

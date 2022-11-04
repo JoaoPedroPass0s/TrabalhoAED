@@ -18,8 +18,8 @@ public:
     string getRequestType() const;
 private:
     string uc_;
-    string classin_;
-    string classout_;
+    string classin_=" ";
+    string classout_=" ";
     string studentCode_;
     string requesttype_;
 };

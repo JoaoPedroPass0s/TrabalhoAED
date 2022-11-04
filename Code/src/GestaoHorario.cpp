@@ -82,27 +82,58 @@ void GestaoHorario::readFileClasses(){
     }
 }
 
+void GestaoHorario::readFileRequests(){
+    std::ifstream requests;
+    requests.open("/home/pedropassos/TrabalhoAED/Code/schedule/Declined_Requests.csv");
+    string line;
+    getline(requests,line);
+    while(getline(requests,line)){
+        stringstream inputString(line);
+        string uc;
+        string classIn;
+        string classOut;
+        string studentCode;
+        string requestType;
+        getline(inputString,uc,',');
+        getline(inputString,classIn,',');
+        getline(inputString,classOut,',');
+        getline(inputString,studentCode,',');
+        getline(inputString,requestType,',');
+        Request r(uc,classIn,classOut,studentCode,requestType);
+        requests_.push_back(r);
+    }
+}
+
 void GestaoHorario::saveRequest(Request request){
     requests_.push_back(request);
 }
 
 void GestaoHorario::processRequest(){
+    ofstream declinedRequests;
+    declinedRequests.open("/home/pedropassos/TrabalhoAED/Code/schedule/Declined_Requests.csv");
+    declinedRequests << "Uc" << "," << "ClassIn" << "," << "ClassOut"
+                     << "," << "StudentCode" << "," << "RequestType" << endl;
     for(Request r:requests_){
-        bool valid=true;
+        bool valid=false;
         if(r.getRequestType()=="Remove"){
             for(int i=0;i<students_.size();i++){
                 if(students_[i].getId()==r.getStudentCode()){
                     students_[i].RemoveClass(r);
+                    valid=true;
                 }
             }
         }else if(r.getRequestType()=="Add"){
-
+            valid=true;
         }else if(r.getRequestType()=="Change"){
 
         }
+        if(!valid){
+            declinedRequests << r.getUc() << "," << r.getClassIn() << "," << r.getClassOut()
+            << "," << r.getStudentCode() << "," << r.getRequestType() << endl;
+        }
     }
     ofstream myFile;
-    myFile.open("/home/pedropassos/TrabalhoAED/Code/schedule/Declined_Requests.csv");
+    myFile.open("/home/pedropassos/TrabalhoAED/Code/schedule/Modified_Students.csv");
     for(Student s:students_){
         for(UCClass u:s.getClasses()){
             myFile << s.getId() << "," << s.getName() << "," << u.getUc() << "," << u.getClass() << endl;
@@ -121,7 +152,7 @@ void GestaoHorario::listAllStudents(){
     cout << "Returning..." << endl;
 }
 
-void GestaoHorario::AddStudentsToClasses() {
+void GestaoHorario::addStudentsToClasses() {
     for(Student s:students_){
         for(UCClass u:s.getClasses()){
             for(int i=0;i<horarioC_.size();i++){

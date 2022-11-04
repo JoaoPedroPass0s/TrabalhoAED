@@ -14,13 +14,13 @@ using namespace std;
 class GestaoHorario {
 public:
     void readFileStudents();
+    void readFileRequests();
+    void readFileClasses();
     void saveRequest(Request request);
     void processRequest();
     void listAllStudents();
-    void readFileClasses();
-    void AddStudentsToClasses();
+    void addStudentsToClasses();
     unsigned long binarySearchHorario(const UCClass &ucclass) const;
-    bool compareString(string basicString, string basicString1);
     vector<Student> students_;
     vector<HClass> horarioC_;
     vector<Request> requests_;
