@@ -13,13 +13,25 @@ string Student::getName() const {return name_; }
 string Student::getId() const {return id_; }
 vector<UCClass> Student::getClasses() const {return classes_; }
 
-void Student::RemoveClass(Request r) {
+bool Student::RemoveClass(Request r) {
     vector<UCClass>::iterator i;
     i=classes_.begin();
     for(UCClass u:classes_){
         if(u.getUc()==r.getUc() && u.getClass()==r.getClassIn()){
             classes_.erase(i);
+            return true;
         }
         i++;
     }
+    return false;
+}
+
+bool Student::addClass(Request r){
+    for(UCClass u:classes_){
+        if(u.getUc()==r.getUc() && u.getClass()==r.getClassIn()){
+
+            return true;
+        }
+    }
+    return false;
 }

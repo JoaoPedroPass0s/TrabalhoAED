@@ -64,7 +64,7 @@ void GestaoHorario::readFileClasses(){
         double start =atof(startHour.c_str());
         getline(inputString,duration,',');
         double endHour = start + atof(duration.c_str());
-        getline(inputString,classType,',');
+        getline(inputString,classType,'\r');
         for(HClass h:horarioC_){
             if(h.getUc()==ucCode_ && h.getClass()==classCode_){
                 b=false;
@@ -118,14 +118,21 @@ void GestaoHorario::processRequest(){
         if(r.getRequestType()=="Remove"){
             for(int i=0;i<students_.size();i++){
                 if(students_[i].getId()==r.getStudentCode()){
-                    students_[i].RemoveClass(r);
-                    valid=true;
+                    valid=students_[i].RemoveClass(r);
                 }
             }
         }else if(r.getRequestType()=="Add"){
-            valid=true;
+            for(int i=0;i<students_.size();i++){
+                if(students_[i].getId()==r.getStudentCode()){
+                    valid=students_[i].addClass(r);
+                }
+            }
         }else if(r.getRequestType()=="Change"){
-
+            for(int i=0;i<students_.size();i++){
+                if(students_[i].getId()==r.getStudentCode()){
+                    valid=students_[i].RemoveClass(r);
+                }
+            }
         }
         if(!valid){
             declinedRequests << r.getUc() << "," << r.getClassIn() << "," << r.getClassOut()
@@ -162,6 +169,10 @@ void GestaoHorario::addStudentsToClasses() {
             }
         }
     }
+}
+
+bool GestaoHorario::canClassesBeTogether(UCClass c1,UCClass c2){
+
 }
 
 unsigned long GestaoHorario::binarySearchHorario(const UCClass &ucclass) const {
