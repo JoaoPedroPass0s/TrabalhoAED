@@ -9,7 +9,6 @@
 #include "../src/Student.cpp"
 #include "../src/UCClass.cpp"
 
-
 #include "../Testing/igloo/igloo.h"
 
 /*
