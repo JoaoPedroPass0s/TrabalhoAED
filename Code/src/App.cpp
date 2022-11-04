@@ -36,7 +36,7 @@ bool App::printUserMenu() {
                "│  Cancel Request                        [12] │  View Uc Class                         [22] │\n"
                "│  Request list                          [13] │  View Class Schedule                   [23] │\n"
                "╞═════════════════════════════════════════════╡  View Student List                     [24] │\n"
-               "│                Other operations             │                                             │\n"
+               "│                Other operations             │  View Class List                       [25] │\n"
                "╞═════════════════════════════════════════════╡                                             │\n"
                "│  Exit                                  [31] │                                             │\n"
                "╘═════════════════════════════════════════════╧═════════════════════════════════════════════╛\n"
@@ -68,6 +68,9 @@ bool App::printUserMenu() {
             break;
         case 24:
             horario.listAllStudents();
+            break;
+        case 25:
+            printListOfClasses();
             break;
         case 31:
             return false;
@@ -325,5 +328,15 @@ void App::cancelRequest(){
         cin.ignore();
         cin.ignore();
     }
+    cout << "Returning..." << endl;
+}
+
+void App::printListOfClasses() {
+    for(HClass h:horario.horarioC_){
+        cout << "UC: " << h.getUc() << " Class: " << h.getClass() << endl;
+    }
+    cout << "Number of Classes: "<< horario.horarioC_.size() << endl;
+    cout << "Press Enter to return..." << endl;
+    cin.ignore();
     cout << "Returning..." << endl;
 }

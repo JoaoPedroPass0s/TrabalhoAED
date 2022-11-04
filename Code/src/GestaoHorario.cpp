@@ -176,9 +176,9 @@ void GestaoHorario::processRequest(){
 void GestaoHorario::listAllStudents(){
     string wait;
     for(Student s:students_){
-        cout << s.getName() << " " << s.getId()<< endl;
+        cout << "Name: " << s.getName() << " Id: " << s.getId()<< endl;
     }
-    cout << "Number of Students:" << students_.size() << endl;
+    cout << "Number of Students: " << students_.size() << endl;
     cout << "Press Enter to return..." << endl;
     cin.ignore();
     cout << "Returning..." << endl;
