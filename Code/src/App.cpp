@@ -61,12 +61,7 @@ bool App::printUserMenu() {
             printStudentSchedule();
             break;
         case 22: {
-            for (HClass h: horario.horarioC_) {
-                cout << h.getUc() << " " << h.getClass() << " " << h.getStudentList().size() << endl;
-                for(Slot s : h.getClassUcHour()){
-                    cout << s.getEndHour() << " " << s.getClassType() << endl;
-                }
-            }
+            printUcClasses();
             break;
         }
         case 23:
@@ -117,6 +112,10 @@ void App::printStudentSchedule(){
     }
 }
 
+void App::printUcClasses() {
+
+}
+
 void App::printClassSchedule() {
     string uccode;
     string classcode;
@@ -150,13 +149,14 @@ void App::printClassSchedule() {
         }
 
         cout <<    "╒═════════════════════════════════════════════╕\n"
+                   "          UC Code:    "<< classSchedule.getUc() << endl <<
                    "          Class Code: "<< classSchedule.getClass() << endl <<
              "╞═════════════════════════════════════════════╡\n";
         for(Slot sch : classSchedule.getClassUcHour()){
-            cout <<    "                 "<< sch.getWeekDay() << endl <<
-                 "                 "<< sch.getClassType() << endl <<
-                 "                 "<< sch.getStartHour() << endl <<
-                 "                 "<< sch.getEndHour() << endl <<
+            cout <<    "    WeekDay:     "<< sch.getWeekDay() << endl <<
+                 "    Class Type:  "<< sch.getClassType() << endl <<
+                 "    Start Hour:  "<< sch.getStartHour() << endl <<
+                 "    End Hour:    "<< sch.getEndHour() << endl <<
                  "╞═════════════════════════════════════════════╡\n";
         }
         cout << "│  Return                                [1]  │\n"
