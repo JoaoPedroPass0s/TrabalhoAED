@@ -66,11 +66,11 @@ void GestaoHorario::readFileClasses(){
         getline(inputString,duration,',');
         double endHour = start + atof(duration.c_str());
         getline(inputString,classType,'\r');
-        for(unsigned i = 0; i < horarioC_.size(); i++){
-            if(horarioC_[i].getUc()==ucCode_ && horarioC_[i].getClass()==classCode_){
+        for(unsigned i = 0; i < classesH_.size(); i++){
+            if(classesH_[i].getUc()==ucCode_ && classesH_[i].getClass()==classCode_){
                 b=false;
                 Slot s(weekDay,start,endHour,classType);
-                horarioC_[i].InsertClassUCHour(s);
+                classesH_[i].InsertClassUCHour(s);
                 break;
             }
         }
@@ -78,7 +78,7 @@ void GestaoHorario::readFileClasses(){
             HClass h(ucCode_,classCode_);
             Slot s(weekDay,start,endHour,classType);
             h.InsertClassUCHour(s);
-            horarioC_.push_back(h);
+            classesH_.push_back(h);
         }
     }
 }
@@ -105,9 +105,6 @@ void GestaoHorario::readFileRequests(){
     }
 }
 
-void GestaoHorario::saveRequest(Request request){
-    requests_.push_back(request);
-}
 
 void GestaoHorario::processRequest(){
     ofstream declinedRequests;
@@ -128,7 +125,7 @@ void GestaoHorario::processRequest(){
                 if(students_[i].getId()==r.getStudentCode()){
                     for(UCClass c1:students_[i].getClasses()){
                         UCClass c2(r.getUc(),r.getClassOut());
-                        if(!canClassesBeTogether(c1,c2)){
+                        if(!classesOverlap(c1,c2)){
                             b=false;
                         }
                     }
@@ -146,7 +143,7 @@ void GestaoHorario::processRequest(){
                     students_[i].RemoveClass(r);
                     for(UCClass c1:students_[i].getClasses()){
                         UCClass c2(r.getUc(),r.getClassOut());
-                        if(!canClassesBeTogether(c1,c2)){
+                        if(!classesOverlap(c1,c2)){
                             b=false;
                         }
                     }
@@ -173,33 +170,23 @@ void GestaoHorario::processRequest(){
     }
 }
 
-void GestaoHorario::listAllStudents(){
-    string wait;
-    for(Student s:students_){
-        cout << "Name: " << s.getName() << " Id: " << s.getId()<< endl;
-    }
-    cout << "Number of Students: " << students_.size() << endl;
-    cout << "Press Enter to return..." << endl;
-    cin.ignore();
-    cout << "Returning..." << endl;
-}
 
 void GestaoHorario::addStudentsToClasses() {
     for(Student s:students_){
         for(UCClass u:s.getClasses()){
-            for(int i=0;i<horarioC_.size();i++){
-                if(horarioC_[i].getUc()==u.getUc() and horarioC_[i].getClass()==u.getClass()){
-                    horarioC_[i].InsertStudent(s);
+            for(int i=0;i<classesH_.size();i++){
+                if(classesH_[i].getUc()==u.getUc() and classesH_[i].getClass()==u.getClass()){
+                    classesH_[i].InsertStudent(s);
                 }
             }
         }
     }
 }
 
-bool GestaoHorario::canClassesBeTogether(UCClass c1,UCClass c2){
+bool GestaoHorario::classesOverlap(UCClass c1,UCClass c2){
     HClass h1;
     HClass h2;
-    for(HClass h:horarioC_){
+    for(HClass h:classesH_){
         if(h.getUc()==c1.getUc() && h.getClass()==c1.getClass()){
             h1=h;
         }

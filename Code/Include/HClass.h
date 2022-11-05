@@ -12,19 +12,19 @@ using namespace std;
 
 class HClass {
 public:
-    HClass(string uc, string classes);
-    HClass();
-    string getUc() const;
-    string getClass() const;
-    list<Slot> getClassUcHour() const;
-    vector<Student> getStudentList() const;
-    void InsertStudent(Student);
-    void InsertClassUCHour(Slot);
+    HClass(string uc, string classes); // Constructor for the HClass.
+    HClass(); // Empty Constructor.
+    string getUc() const; // Returns uc_.
+    string getClass() const; // Returns class_
+    list<Slot> getClassUcHour() const; // Returns classUcHour_.
+    vector<Student> getStudentList() const; // Returns liststudents_
+    void InsertStudent(Student); // Takes a Student and Inserts him in listStudents_.
+    void InsertClassUCHour(Slot); // Takes a New Hour and Date for the Class and inserts it in classUcHour_.
 private:
-    list<Slot> classUcHour_;
-    vector<Student> liststudents_;
-    string uc_;
-    string class_;
+    list<Slot> classUcHour_; // List of the Classes Hour and Date
+    vector<Student> liststudents_; // List of Students of the Class
+    string uc_; // Uc Code
+    string class_; // Class Code
 };
 
 

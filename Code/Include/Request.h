@@ -10,18 +10,18 @@ using namespace std;
 
 class Request {
 public:
-    Request(string uc,string classin,string classout,string studentCode,string requesttype);
-    string getUc() const;
-    string getClassIn() const;
-    string getClassOut() const;
-    string getStudentCode() const;
-    string getRequestType() const;
+    Request(string uc,string classin,string classout,string studentCode,string requesttype); // Constructor for the Request
+    string getUc() const; // Returns uc_.
+    string getClassIn() const; // Returns classin_.
+    string getClassOut() const; // Returns classout_.
+    string getStudentCode() const; // Returns studentcode_.
+    string getRequestType() const; // Returns requesttype_.
 private:
-    string uc_;
-    string classin_=" ";
-    string classout_=" ";
-    string studentCode_;
-    string requesttype_;
+    string uc_; // UC Code.
+    string classin_; // Class the Student is in.
+    string classout_; // Class the Student wants to go.
+    string studentCode_; // Student Code.
+    string requesttype_; // Request Type.
 };
 
 

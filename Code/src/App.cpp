@@ -58,7 +58,7 @@ bool App::printUserMenu() {
             printRequestList();
             break;
         case 21:
-            printStudentSchedule();
+            printStudentClasses();
             break;
         case 22:
             printUcClassesStudents();
@@ -67,7 +67,7 @@ bool App::printUserMenu() {
             printClassSchedule();
             break;
         case 24:
-            horario.listAllStudents();
+            listAllStudents();
             break;
         case 25:
             printListOfClasses();
@@ -78,7 +78,7 @@ bool App::printUserMenu() {
     return true;
 }
 
-void App::printStudentSchedule(){
+void App::printStudentClasses() {
     string code;
     cout <<    "╒═════════════════════════════════════════════╕\n"
                "│             Student Classes                 │\n"
@@ -90,28 +90,36 @@ void App::printStudentSchedule(){
                "                                               \n";
     cin >> code;
     cin.ignore();
-    if(code!="1") {
-        Student student;
-        for (Student s: horario.students_) {
-            if (s.getId() == code) {
-                student=s;
-                break;
-            }
-        }
-        cout <<    "╒═════════════════════════════════════════════╕\n"
-                   "                Name: "<< student.getName() << endl <<
-             "╞═════════════════════════════════════════════╡\n";
-        for(UCClass uc:student.getClasses()){
-            cout <<    "                 "<< uc.getUc() << endl <<
-                 "                 "<< uc.getClass() << endl <<
-                 "╞═════════════════════════════════════════════╡\n";
-        }
-        cout << "│  Return                                [1]  │\n"
-                "╘═════════════════════════════════════════════╛\n"
-                "                                               \n";
-        cin.ignore();
-        cout << "Returning..." << endl;
+    if(code=="1") {
+        return ;
     }
+    Student student;
+    bool b=false;
+    for (Student s: horario.students_) {
+        if (s.getId() == code) {
+            b=true;
+            student=s;
+            cout <<    "╒═════════════════════════════════════════════╕\n"
+                       "                Name: "<< student.getName() << endl <<
+                       "╞═════════════════════════════════════════════╡\n";
+            break;
+        }
+    }
+    for(UCClass uc:student.getClasses()){
+        cout <<    "                 "<< uc.getUc() << endl <<
+        "                 "<< uc.getClass() << endl <<
+        "╞═════════════════════════════════════════════╡\n";
+    }
+    if(b==false){
+        cout << "╒═════════════════════════════════════════════╕\n"
+                "│          Error Student not Found...         │\n"
+                "╞═════════════════════════════════════════════╡\n";
+    }
+    cout << "│  Return                                [1]  │\n"
+            "╘═════════════════════════════════════════════╛\n"
+            "                                               \n";
+    cin.ignore();
+    cout << "Returning..." << endl;
 }
 
 void App::printUcClassesStudents() {
@@ -125,6 +133,9 @@ void App::printUcClassesStudents() {
                "╘═════════════════════════════════════════════╛\n"
                "                                               \n";
     cin >> uccode;
+    if(uccode=="1"){
+        return ;
+    }
     cout <<    "╒═════════════════════════════════════════════╕\n"
                "│                  Class Code                 │\n"
                "╞═════════════════════════════════════════════╡\n"
@@ -135,28 +146,35 @@ void App::printUcClassesStudents() {
                "                                               \n";
     cin >> classcode;
     cin.ignore();
-    if(uccode != "1" && classcode != "1") {
-
-        cout <<    "╒═════════════════════════════════════════════╕\n"
-                   "          UC Code:    "<< uccode << "\n";
-        for(HClass h : horario.horarioC_) {
-            if(uccode == h.getUc() && classcode==h.getClass()) {
-                cout << "╞═════════════════════════════════════════════╡\n"
-                        "          Class Code:    " << h.getClass() << endl <<
-                     "╞═════════════════════════════════════════════╡\n";
-                for (Student s: h.getStudentList()) {
-                    cout << "    Student Name:    " << s.getName() << endl <<
-                         "    Student ID:      " << s.getId() << endl <<
-                         "╞═════════════════════════════════════════════╡\n";
-                }
+    if(classcode == "1") {
+        return ;
+    }
+    bool b=false;
+    for(HClass h : horario.classesH_) {
+        if(uccode == h.getUc() && classcode==h.getClass()) {
+            b=true;
+            cout <<    "╒═════════════════════════════════════════════╕\n"
+                       "          UC Code:    "<< uccode << "\n";
+            cout << "╞═════════════════════════════════════════════╡\n"
+                    "          Class Code:    " << h.getClass() << endl <<
+                    "╞═════════════════════════════════════════════╡\n";
+            for (Student s: h.getStudentList()) {
+                cout << "    Student Name:    " << s.getName() << endl <<
+                "    Student ID:      " << s.getId() << endl <<
+                "╞═════════════════════════════════════════════╡\n";
             }
         }
-        cout << "│  Return                                [1]  │\n"
-                "╘═════════════════════════════════════════════╛\n"
-                "                                               \n";
-        cin.ignore();
-        cout << "Returning..." << endl;
     }
+    if(b==false){
+        cout << "╒═════════════════════════════════════════════╕\n"
+                "│          Error Class not Found...           │\n"
+                "╞═════════════════════════════════════════════╡\n";
+    }
+    cout << "│  Return                                [1]  │\n"
+            "╘═════════════════════════════════════════════╛\n"
+            "                                               \n";
+    cin.ignore();
+    cout << "Returning..." << endl;
 }
 
 void App::printClassSchedule() {
@@ -171,7 +189,9 @@ void App::printClassSchedule() {
                "╘═════════════════════════════════════════════╛\n"
                "                                               \n";
     cin >> uccode;
-
+    if(uccode=="1"){
+        return ;
+    }
     cout <<    "╒═════════════════════════════════════════════╕\n"
                "│                  Class Code                 │\n"
                "╞═════════════════════════════════════════════╡\n"
@@ -183,31 +203,38 @@ void App::printClassSchedule() {
     cin >> classcode;
     cin.ignore();
 
-    if(classcode != "1" and uccode != "1") {
-        HClass classSchedule;
-        for(HClass h : horario.horarioC_) {
-            if(h.getUc() == uccode and h.getClass() == classcode) {
-                classSchedule = h;
-            }
-        }
-
-        cout <<    "╒═════════════════════════════════════════════╕\n"
-                   "          UC Code:    "<< classSchedule.getUc() << endl <<
-                   "          Class Code: "<< classSchedule.getClass() << endl <<
-             "╞═════════════════════════════════════════════╡\n";
-        for(Slot sch : classSchedule.getClassUcHour()){
-            cout <<    "    WeekDay:     "<< sch.getWeekDay() << endl <<
-                 "    Class Type:  "<< sch.getClassType() << endl <<
-                 "    Start Hour:  "<< sch.getStartHour() << endl <<
-                 "    End Hour:    "<< sch.getEndHour() << endl <<
+    if(classcode == "1") {
+        return ;
+    }
+    HClass classSchedule;
+    bool b=false;
+    for(HClass h : horario.classesH_) {
+        if(h.getUc() == uccode and h.getClass() == classcode) {
+            b=true;
+            classSchedule = h;
+            cout <<    "╒═════════════════════════════════════════════╕\n"
+                       "          UC Code:    "<< classSchedule.getUc() << endl <<
+                 "          Class Code: "<< classSchedule.getClass() << endl <<
                  "╞═════════════════════════════════════════════╡\n";
         }
-        cout << "│  Return                                [1]  │\n"
-                "╘═════════════════════════════════════════════╛\n"
-                "                                               \n";
-        cin.ignore();
-        cout << "Returning..." << endl;
     }
+    for(Slot sch : classSchedule.getClassUcHour()){
+        cout <<    "    WeekDay:     "<< sch.getWeekDay() << endl <<
+        "    Class Type:  "<< sch.getClassType() << endl <<
+        "    Start Hour:  "<< sch.getStartHour() << endl <<
+        "    End Hour:    "<< sch.getEndHour() << endl <<
+        "╞═════════════════════════════════════════════╡\n";
+    }
+    if(b==false){
+        cout << "╒═════════════════════════════════════════════╕\n"
+                "│          Error Class not Found...           │\n"
+                "╞═════════════════════════════════════════════╡\n";
+    }
+    cout << "│  Return                                [1]  │\n"
+            "╘═════════════════════════════════════════════╛\n"
+            "                                               \n";
+    cin.ignore();
+    cout << "Returning..." << endl;
 }
 
 bool App::printMakeRequest(){
@@ -238,14 +265,14 @@ bool App::printMakeRequest(){
                 cout << "Write the Code of the Class you want to remove the student of:" << endl;
                 cin >> classein;
                 Request r(uc, classein, "", stucode, "Remove");
-                horario.saveRequest(r);
+                horario.requests_.push_back(r);
                 break;
             }
             case 2: {
                 cout << "Write the Class Code you want to change the student too:" << endl;
                 cin >> classeout;
                 Request i(uc, "", classeout, stucode, "Add");
-                horario.saveRequest(i);
+                horario.requests_.push_back(i);
                 break;
             }
             case 3: {
@@ -254,7 +281,7 @@ bool App::printMakeRequest(){
                 cout << "Write the Class Code you want to change too:" << endl;
                 cin >> classeout;
                 Request o(uc, classein, classeout, stucode, "Change");
-                horario.saveRequest(o);
+                horario.requests_.push_back(o);
                 break;
             }
             case 4: {
@@ -264,7 +291,7 @@ bool App::printMakeRequest(){
                     cout << "Write the Class Code you want to change too:" << endl;
                     cin >> classeout;
                     Request o(uc, classein, classeout, stucode, "Change");
-                    horario.saveRequest(o);
+                    horario.requests_.push_back(o);
                     cout << "To Stop write 1 to continue write 2..." << endl;
                     cin >> chose;
                     if (chose == 1) {
@@ -332,10 +359,21 @@ void App::cancelRequest(){
 }
 
 void App::printListOfClasses() {
-    for(HClass h:horario.horarioC_){
+    for(HClass h:horario.classesH_){
         cout << "UC: " << h.getUc() << " Class: " << h.getClass() << endl;
     }
-    cout << "Number of Classes: "<< horario.horarioC_.size() << endl;
+    cout << "Number of Classes: "<< horario.classesH_.size() << endl;
+    cout << "Press Enter to return..." << endl;
+    cin.ignore();
+    cout << "Returning..." << endl;
+}
+
+void App::listAllStudents(){
+    string wait;
+    for(Student s:horario.students_){
+        cout << "Name: " << s.getName() << " Id: " << s.getId()<< endl;
+    }
+    cout << "Number of Students: " << horario.students_.size() << endl;
     cout << "Press Enter to return..." << endl;
     cin.ignore();
     cout << "Returning..." << endl;

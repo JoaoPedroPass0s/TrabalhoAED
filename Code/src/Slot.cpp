@@ -10,5 +10,4 @@ Slot::Slot(string weekDay, float startHour, float endHour, string classType): we
 string Slot::getWeekDay() const {return weekDay_; }
 string Slot::getClassType() const {return classType_; }
 float Slot::getStartHour() const {return startHour_; }
-float Slot::getDuration() const {return duration_; }
 float Slot::getEndHour() const {return endHour_; }
