@@ -15,7 +15,6 @@ void GestaoHorario::readFileStudents(){
     string name="";
     string line;
     vector<UCClass> classesStu;
-    getline(students,line);
     while(getline(students,line)){
         stringstream inputString(line);
         string ucCode;
@@ -162,7 +161,7 @@ void GestaoHorario::processRequest(){
         }
     }
     ofstream myFile;
-    myFile.open("/home/pedropassos/TrabalhoAED/Code/schedule/Modified_Students.csv");
+    myFile.open("/home/pedropassos/TrabalhoAED/Code/schedule/students_classes.csv");
     for(Student s:students_){
         for(UCClass u:s.getClasses()){
             myFile << s.getId() << "," << s.getName() << "," << u.getUc() << "," << u.getClass() << endl;
